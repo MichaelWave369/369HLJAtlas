@@ -1,0 +1,1493 @@
+{
+  "schemaVersion": 1,
+  "realms": [
+    {
+      "id": "geometry",
+      "name": "Sacred Mathematics",
+      "description": "Geometry, proportions and numerical patterns",
+      "number": "01"
+    },
+    {
+      "id": "fields",
+      "name": "Waves & Fields",
+      "description": "Acoustics, electromagnetism, and proposed field models",
+      "number": "02"
+    },
+    {
+      "id": "matter",
+      "name": "Matter & Architecture",
+      "description": "Material properties and structural designs",
+      "number": "03"
+    },
+    {
+      "id": "life",
+      "name": "Life & Biology",
+      "description": "Genetics, biology, and proposed mechanisms",
+      "number": "04"
+    },
+    {
+      "id": "mind",
+      "name": "Mind & Consciousness",
+      "description": "Conscious experience and extraordinary claims",
+      "number": "05"
+    },
+    {
+      "id": "wellness",
+      "name": "Wellness & Embodiment",
+      "description": "Practices and outcome-specific health research",
+      "number": "06"
+    },
+    {
+      "id": "wisdom",
+      "name": "Wisdom & Symbolism",
+      "description": "Ritual, metaphysics, and living traditions",
+      "number": "07"
+    },
+    {
+      "id": "history",
+      "name": "History & Narratives",
+      "description": "Historical sources and media literacy",
+      "number": "08"
+    },
+    {
+      "id": "community",
+      "name": "Community & Sovereignty",
+      "description": "Cooperation, self-determination and sustainability",
+      "number": "09"
+    }
+  ],
+  "topics": [
+    {
+      "title": "Sacred Geometry",
+      "realm": "geometry",
+      "id": "sacred-geometry",
+      "sourceOrder": 1,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Platonic Solids",
+      "realm": "geometry",
+      "id": "platonic-solids",
+      "sourceOrder": 2,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Flower of Life",
+      "realm": "geometry",
+      "id": "flower-of-life",
+      "sourceOrder": 3,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Seed of Life",
+      "realm": "geometry",
+      "id": "seed-of-life",
+      "sourceOrder": 4,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Egg of Life",
+      "realm": "geometry",
+      "id": "egg-of-life",
+      "sourceOrder": 5,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Fruit of Life",
+      "realm": "geometry",
+      "id": "fruit-of-life",
+      "sourceOrder": 6,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Tree of Life",
+      "realm": "geometry",
+      "id": "tree-of-life",
+      "sourceOrder": 7,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Metatron’s Cube",
+      "realm": "geometry",
+      "id": "metatrons-cube",
+      "sourceOrder": 8,
+      "reviewStatus": "not-reviewed",
+      "description": "Construct and compare geometric relationships and cultural interpretations."
+    },
+    {
+      "title": "Merkaba",
+      "realm": "geometry",
+      "id": "merkaba",
+      "sourceOrder": 9,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Vesica Piscis",
+      "realm": "geometry",
+      "id": "vesica-piscis",
+      "sourceOrder": 10,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Vector Equilibrium",
+      "realm": "geometry",
+      "id": "vector-equilibrium",
+      "sourceOrder": 11,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "64 Tetrahedron Grid",
+      "realm": "geometry",
+      "id": "64-tetrahedron-grid",
+      "sourceOrder": 12,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Vortex Based Mathematics",
+      "realm": "geometry",
+      "id": "vortex-based-mathematics",
+      "sourceOrder": 13,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "3-6-9 Numerology",
+      "realm": "geometry",
+      "id": "3-6-9-numerology",
+      "sourceOrder": 14,
+      "reviewStatus": "not-reviewed",
+      "description": "Study mathematical patterning and symbolic interpretations without inferring physical causality."
+    },
+    {
+      "title": "Toroidal Field Energy Systems",
+      "realm": "fields",
+      "id": "toroidal-field-energy-systems",
+      "sourceOrder": 15,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Cymatics",
+      "realm": "fields",
+      "id": "cymatics",
+      "sourceOrder": 16,
+      "reviewStatus": "not-reviewed",
+      "description": "Study standing waves and visible patterns in vibrated media. Patterns do not establish medical effects."
+    },
+    {
+      "title": "Harmonics",
+      "realm": "fields",
+      "id": "harmonics",
+      "sourceOrder": 17,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Resonance",
+      "realm": "fields",
+      "id": "resonance",
+      "sourceOrder": 18,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Scalar Waves",
+      "realm": "fields",
+      "id": "scalar-waves",
+      "sourceOrder": 19,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Electromagnetic Fields",
+      "realm": "fields",
+      "id": "electromagnetic-fields",
+      "sourceOrder": 20,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Coherent Energy Fields",
+      "realm": "fields",
+      "id": "coherent-energy-fields",
+      "sourceOrder": 21,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Frequency Entrainment",
+      "realm": "fields",
+      "id": "frequency-entrainment",
+      "sourceOrder": 22,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Heart Coherence",
+      "realm": "fields",
+      "id": "heart-coherence",
+      "sourceOrder": 23,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Schumann Resonance (Earth's Heartbeat)",
+      "realm": "fields",
+      "id": "schumann-resonance-earths-heartbeat",
+      "sourceOrder": 24,
+      "reviewStatus": "not-reviewed",
+      "description": "Distinguish measured Earth-ionosphere electromagnetic resonance from claims of human healing."
+    },
+    {
+      "title": "Unified Field Concepts",
+      "realm": "fields",
+      "id": "unified-field-concepts",
+      "sourceOrder": 25,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Zero Point Field Concepts",
+      "realm": "fields",
+      "id": "zero-point-field-concepts",
+      "sourceOrder": 26,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Acoustic Resonance",
+      "realm": "fields",
+      "id": "acoustic-resonance",
+      "sourceOrder": 27,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Magnetism",
+      "realm": "fields",
+      "id": "magnetism",
+      "sourceOrder": 28,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Geomagnetic Alignment",
+      "realm": "fields",
+      "id": "geomagnetic-alignment",
+      "sourceOrder": 29,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Compass / Magnetic North Alignment",
+      "realm": "fields",
+      "id": "compass-magnetic-north-alignment",
+      "sourceOrder": 30,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Quartz Crystal Resonance",
+      "realm": "matter",
+      "id": "quartz-crystal-resonance",
+      "sourceOrder": 31,
+      "reviewStatus": "not-reviewed",
+      "description": "Explore measurable piezoelectric behavior and its use in frequency-stable electronics."
+    },
+    {
+      "title": "Crystal Oscillators",
+      "realm": "matter",
+      "id": "crystal-oscillators",
+      "sourceOrder": 32,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Organite Technology",
+      "realm": "matter",
+      "id": "organite-technology",
+      "sourceOrder": 33,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Geodesic Architecture",
+      "realm": "matter",
+      "id": "geodesic-architecture",
+      "sourceOrder": 34,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sacred Architecture",
+      "realm": "matter",
+      "id": "sacred-architecture",
+      "sourceOrder": 35,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Resonant Structures",
+      "realm": "matter",
+      "id": "resonant-structures",
+      "sourceOrder": 36,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Acoustic Engineering Concepts",
+      "realm": "matter",
+      "id": "acoustic-engineering-concepts",
+      "sourceOrder": 37,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Structural Geometry",
+      "realm": "matter",
+      "id": "structural-geometry",
+      "sourceOrder": 38,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Copper Conductivity Concepts",
+      "realm": "matter",
+      "id": "copper-conductivity-concepts",
+      "sourceOrder": 39,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Water Memory Concepts",
+      "realm": "matter",
+      "id": "water-memory-concepts",
+      "sourceOrder": 40,
+      "reviewStatus": "not-reviewed",
+      "description": "Investigate definitions, chemistry, reproducibility, and negative controls."
+    },
+    {
+      "title": "Structured Water Concepts",
+      "realm": "matter",
+      "id": "structured-water-concepts",
+      "sourceOrder": 41,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Earth Energies",
+      "realm": "matter",
+      "id": "earth-energies",
+      "sourceOrder": 42,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "DNA Activation",
+      "realm": "life",
+      "id": "dna-activation",
+      "sourceOrder": 43,
+      "reviewStatus": "not-reviewed",
+      "description": "Define the proposed change and distinguish metaphors from measurable molecular biology."
+    },
+    {
+      "title": "DNA Memory",
+      "realm": "life",
+      "id": "dna-memory",
+      "sourceOrder": 44,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Genetic Memory",
+      "realm": "life",
+      "id": "genetic-memory",
+      "sourceOrder": 45,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Quantum Biology",
+      "realm": "life",
+      "id": "quantum-biology",
+      "sourceOrder": 46,
+      "reviewStatus": "not-reviewed",
+      "description": "Compare rigorously investigated quantum mechanisms in living systems with untested extrapolations."
+    },
+    {
+      "title": "Quantum Entanglement",
+      "realm": "life",
+      "id": "quantum-entanglement",
+      "sourceOrder": 47,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Biofields",
+      "realm": "life",
+      "id": "biofields",
+      "sourceOrder": 48,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Human Evolution Concepts",
+      "realm": "life",
+      "id": "human-evolution-concepts",
+      "sourceOrder": 49,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Quantum Consciousness",
+      "realm": "mind",
+      "id": "quantum-consciousness",
+      "sourceOrder": 50,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Consciousness Studies",
+      "realm": "mind",
+      "id": "consciousness-studies",
+      "sourceOrder": 51,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Collective Consciousness",
+      "realm": "mind",
+      "id": "collective-consciousness",
+      "sourceOrder": 52,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Human Potential Activation",
+      "realm": "mind",
+      "id": "human-potential-activation",
+      "sourceOrder": 53,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Superhuman Ability Concepts",
+      "realm": "mind",
+      "id": "superhuman-ability-concepts",
+      "sourceOrder": 54,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Telepathy",
+      "realm": "mind",
+      "id": "telepathy",
+      "sourceOrder": 55,
+      "reviewStatus": "not-reviewed",
+      "description": "Examine proposed information transfer using controls, replication, and alternative explanations."
+    },
+    {
+      "title": "Telekinesis",
+      "realm": "mind",
+      "id": "telekinesis",
+      "sourceOrder": 56,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Psychokinesis",
+      "realm": "mind",
+      "id": "psychokinesis",
+      "sourceOrder": 57,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Clairaudience",
+      "realm": "mind",
+      "id": "clairaudience",
+      "sourceOrder": 58,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Teleportation Concepts",
+      "realm": "mind",
+      "id": "teleportation-concepts",
+      "sourceOrder": 59,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Levitation / Flight Concepts",
+      "realm": "mind",
+      "id": "levitation-flight-concepts",
+      "sourceOrder": 60,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Psi Phenomena",
+      "realm": "mind",
+      "id": "psi-phenomena",
+      "sourceOrder": 61,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Extrasensory Perception",
+      "realm": "mind",
+      "id": "extrasensory-perception",
+      "sourceOrder": 62,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Consciousness Expansion",
+      "realm": "mind",
+      "id": "consciousness-expansion",
+      "sourceOrder": 63,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Frequency-Based Reality Models",
+      "realm": "mind",
+      "id": "frequency-based-reality-models",
+      "sourceOrder": 64,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Reality Creation Concepts",
+      "realm": "mind",
+      "id": "reality-creation-concepts",
+      "sourceOrder": 65,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Intentional Reality Shaping",
+      "realm": "mind",
+      "id": "intentional-reality-shaping",
+      "sourceOrder": 66,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Frequency Healing",
+      "realm": "wellness",
+      "id": "frequency-healing",
+      "sourceOrder": 67,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Vibrational Healing",
+      "realm": "wellness",
+      "id": "vibrational-healing",
+      "sourceOrder": 68,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sound Healing",
+      "realm": "wellness",
+      "id": "sound-healing",
+      "sourceOrder": 69,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Light Healing",
+      "realm": "wellness",
+      "id": "light-healing",
+      "sourceOrder": 70,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Color Therapy",
+      "realm": "wellness",
+      "id": "color-therapy",
+      "sourceOrder": 71,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Crystal Healing",
+      "realm": "wellness",
+      "id": "crystal-healing",
+      "sourceOrder": 72,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Energy Medicine",
+      "realm": "wellness",
+      "id": "energy-medicine",
+      "sourceOrder": 73,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Energy Work",
+      "realm": "wellness",
+      "id": "energy-work",
+      "sourceOrder": 74,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Energy Healing",
+      "realm": "wellness",
+      "id": "energy-healing",
+      "sourceOrder": 75,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Hands-On Healing",
+      "realm": "wellness",
+      "id": "hands-on-healing",
+      "sourceOrder": 76,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Breathwork",
+      "realm": "wellness",
+      "id": "breathwork",
+      "sourceOrder": 77,
+      "reviewStatus": "not-reviewed",
+      "description": "Compare physiological effects, traditions, therapeutic evidence, and safety limitations."
+    },
+    {
+      "title": "Conscious Breathing",
+      "realm": "wellness",
+      "id": "conscious-breathing",
+      "sourceOrder": 78,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Meditation",
+      "realm": "wellness",
+      "id": "meditation",
+      "sourceOrder": 79,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Visualization",
+      "realm": "wellness",
+      "id": "visualization",
+      "sourceOrder": 80,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Guided Trance",
+      "realm": "wellness",
+      "id": "guided-trance",
+      "sourceOrder": 81,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Hypnosis",
+      "realm": "wellness",
+      "id": "hypnosis",
+      "sourceOrder": 82,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Somatic Practices",
+      "realm": "wellness",
+      "id": "somatic-practices",
+      "sourceOrder": 83,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Somatic Flow",
+      "realm": "wellness",
+      "id": "somatic-flow",
+      "sourceOrder": 84,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Emotional Healing",
+      "realm": "wellness",
+      "id": "emotional-healing",
+      "sourceOrder": 85,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Inner Child Healing",
+      "realm": "wellness",
+      "id": "inner-child-healing",
+      "sourceOrder": 86,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Trauma Healing",
+      "realm": "wellness",
+      "id": "trauma-healing",
+      "sourceOrder": 87,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Emotional Regulation",
+      "realm": "wellness",
+      "id": "emotional-regulation",
+      "sourceOrder": 88,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Cognitive Activation",
+      "realm": "wellness",
+      "id": "cognitive-activation",
+      "sourceOrder": 89,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Memory Recall Training",
+      "realm": "wellness",
+      "id": "memory-recall-training",
+      "sourceOrder": 90,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Mindfulness Concepts",
+      "realm": "wellness",
+      "id": "mindfulness-concepts",
+      "sourceOrder": 91,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Conscious Living",
+      "realm": "wellness",
+      "id": "conscious-living",
+      "sourceOrder": 92,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Holistic Wellness & Healing",
+      "realm": "wellness",
+      "id": "holistic-wellness-healing",
+      "sourceOrder": 93,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Earth Connection",
+      "realm": "wellness",
+      "id": "earth-connection",
+      "sourceOrder": 94,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Grounding / Earthing",
+      "realm": "wellness",
+      "id": "grounding-earthing",
+      "sourceOrder": 95,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sunlight Therapy Concepts",
+      "realm": "wellness",
+      "id": "sunlight-therapy-concepts",
+      "sourceOrder": 96,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Circadian Rhythm Alignment",
+      "realm": "wellness",
+      "id": "circadian-rhythm-alignment",
+      "sourceOrder": 97,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Intermittent Fasting",
+      "realm": "wellness",
+      "id": "intermittent-fasting",
+      "sourceOrder": 98,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Cold Exposure",
+      "realm": "wellness",
+      "id": "cold-exposure",
+      "sourceOrder": 99,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Nutritional Healing",
+      "realm": "wellness",
+      "id": "nutritional-healing",
+      "sourceOrder": 100,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Energetic Nutrition",
+      "realm": "wellness",
+      "id": "energetic-nutrition",
+      "sourceOrder": 101,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Hydration Science Concepts",
+      "realm": "wellness",
+      "id": "hydration-science-concepts",
+      "sourceOrder": 102,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Martial Arts",
+      "realm": "wellness",
+      "id": "martial-arts",
+      "sourceOrder": 103,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Movement Arts",
+      "realm": "wellness",
+      "id": "movement-arts",
+      "sourceOrder": 104,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Creative Expression Therapy",
+      "realm": "wellness",
+      "id": "creative-expression-therapy",
+      "sourceOrder": 105,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Art Therapy",
+      "realm": "wellness",
+      "id": "art-therapy",
+      "sourceOrder": 106,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Music as Activation",
+      "realm": "wellness",
+      "id": "music-as-activation",
+      "sourceOrder": 107,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sonic Activation Concepts",
+      "realm": "wellness",
+      "id": "sonic-activation-concepts",
+      "sourceOrder": 108,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Frequency Music Concepts",
+      "realm": "wellness",
+      "id": "frequency-music-concepts",
+      "sourceOrder": 109,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Chakras",
+      "realm": "wisdom",
+      "id": "chakras",
+      "sourceOrder": 110,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Ether / Aether Theory",
+      "realm": "wisdom",
+      "id": "ether-aether-theory",
+      "sourceOrder": 111,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Etheric Realms",
+      "realm": "wisdom",
+      "id": "etheric-realms",
+      "sourceOrder": 112,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Etheric Energy",
+      "realm": "wisdom",
+      "id": "etheric-energy",
+      "sourceOrder": 113,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Life Force Energy",
+      "realm": "wisdom",
+      "id": "life-force-energy",
+      "sourceOrder": 114,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Prana Concepts",
+      "realm": "wisdom",
+      "id": "prana-concepts",
+      "sourceOrder": 115,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Ritual Practices",
+      "realm": "wisdom",
+      "id": "ritual-practices",
+      "sourceOrder": 116,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sacred Ritual",
+      "realm": "wisdom",
+      "id": "sacred-ritual",
+      "sourceOrder": 117,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Ritual Synchronization",
+      "realm": "wisdom",
+      "id": "ritual-synchronization",
+      "sourceOrder": 118,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Spellwork",
+      "realm": "wisdom",
+      "id": "spellwork",
+      "sourceOrder": 119,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Intentional Manifestation",
+      "realm": "wisdom",
+      "id": "intentional-manifestation",
+      "sourceOrder": 120,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Manifestation Theory",
+      "realm": "wisdom",
+      "id": "manifestation-theory",
+      "sourceOrder": 121,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Law of Resonance Concepts",
+      "realm": "wisdom",
+      "id": "law-of-resonance-concepts",
+      "sourceOrder": 122,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "12 Laws of the Universe",
+      "realm": "wisdom",
+      "id": "12-laws-of-the-universe",
+      "sourceOrder": 123,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Frequency Manifestation",
+      "realm": "wisdom",
+      "id": "frequency-manifestation",
+      "sourceOrder": 124,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Synchronization Practices",
+      "realm": "wisdom",
+      "id": "synchronization-practices",
+      "sourceOrder": 125,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sacred Sound / Toning",
+      "realm": "wisdom",
+      "id": "sacred-sound-toning",
+      "sourceOrder": 126,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sacred Syllables",
+      "realm": "wisdom",
+      "id": "sacred-syllables",
+      "sourceOrder": 127,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Vocal Resonance",
+      "realm": "wisdom",
+      "id": "vocal-resonance",
+      "sourceOrder": 128,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sacred Language Concepts",
+      "realm": "wisdom",
+      "id": "sacred-language-concepts",
+      "sourceOrder": 129,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Symbolism",
+      "realm": "wisdom",
+      "id": "symbolism",
+      "sourceOrder": 130,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Archetypal Symbolism",
+      "realm": "wisdom",
+      "id": "archetypal-symbolism",
+      "sourceOrder": 131,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Mythology",
+      "realm": "wisdom",
+      "id": "mythology",
+      "sourceOrder": 132,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Creation Myths",
+      "realm": "wisdom",
+      "id": "creation-myths",
+      "sourceOrder": 133,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Polarity / Duality Concepts",
+      "realm": "wisdom",
+      "id": "polarity-duality-concepts",
+      "sourceOrder": 134,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Divine Masculine Concepts",
+      "realm": "wisdom",
+      "id": "divine-masculine-concepts",
+      "sourceOrder": 135,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Divine Feminine Concepts",
+      "realm": "wisdom",
+      "id": "divine-feminine-concepts",
+      "sourceOrder": 136,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Light and Dark Truth",
+      "realm": "wisdom",
+      "id": "light-and-dark-truth",
+      "sourceOrder": 137,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Spiritual Philosophy",
+      "realm": "wisdom",
+      "id": "spiritual-philosophy",
+      "sourceOrder": 138,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Metaphysics",
+      "realm": "wisdom",
+      "id": "metaphysics",
+      "sourceOrder": 139,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Esoteric Philosophy",
+      "realm": "wisdom",
+      "id": "esoteric-philosophy",
+      "sourceOrder": 140,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Mysticism",
+      "realm": "wisdom",
+      "id": "mysticism",
+      "sourceOrder": 141,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Occult Concepts",
+      "realm": "wisdom",
+      "id": "occult-concepts",
+      "sourceOrder": 142,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Hermetic Concepts",
+      "realm": "wisdom",
+      "id": "hermetic-concepts",
+      "sourceOrder": 143,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "New Age Spirituality",
+      "realm": "wisdom",
+      "id": "new-age-spirituality",
+      "sourceOrder": 144,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Alternative Spirituality",
+      "realm": "wisdom",
+      "id": "alternative-spirituality",
+      "sourceOrder": 145,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Elemental Systems",
+      "realm": "wisdom",
+      "id": "elemental-systems",
+      "sourceOrder": 146,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Classical Elements",
+      "realm": "wisdom",
+      "id": "classical-elements",
+      "sourceOrder": 147,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Earth Element Symbolism",
+      "realm": "wisdom",
+      "id": "earth-element-symbolism",
+      "sourceOrder": 148,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Air Element Symbolism",
+      "realm": "wisdom",
+      "id": "air-element-symbolism",
+      "sourceOrder": 149,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Fire Element Symbolism",
+      "realm": "wisdom",
+      "id": "fire-element-symbolism",
+      "sourceOrder": 150,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Water Element Symbolism",
+      "realm": "wisdom",
+      "id": "water-element-symbolism",
+      "sourceOrder": 151,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Spirit Element Concepts",
+      "realm": "wisdom",
+      "id": "spirit-element-concepts",
+      "sourceOrder": 152,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Ancient Civilizations",
+      "realm": "history",
+      "id": "ancient-civilizations",
+      "sourceOrder": 153,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Ancient Knowledge Systems",
+      "realm": "history",
+      "id": "ancient-knowledge-systems",
+      "sourceOrder": 154,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Ancient Temple Acoustics",
+      "realm": "history",
+      "id": "ancient-temple-acoustics",
+      "sourceOrder": 155,
+      "reviewStatus": "not-reviewed",
+      "description": "Compare site-specific acoustic measurements with interpretations of archaeological intent."
+    },
+    {
+      "title": "Megalithic Resonance Concepts",
+      "realm": "history",
+      "id": "megalithic-resonance-concepts",
+      "sourceOrder": 156,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Indigenous / Tribal Wisdom Themes",
+      "realm": "history",
+      "id": "indigenous-tribal-wisdom-themes",
+      "sourceOrder": 157,
+      "reviewStatus": "not-reviewed",
+      "description": "Use specific, attributed community sources rather than merging distinct Indigenous knowledge systems."
+    },
+    {
+      "title": "Conscious Media Theory",
+      "realm": "history",
+      "id": "conscious-media-theory",
+      "sourceOrder": 158,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Media Programming Concepts",
+      "realm": "history",
+      "id": "media-programming-concepts",
+      "sourceOrder": 159,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Mind Control Concepts",
+      "realm": "history",
+      "id": "mind-control-concepts",
+      "sourceOrder": 160,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Social Conditioning Concepts",
+      "realm": "history",
+      "id": "social-conditioning-concepts",
+      "sourceOrder": 161,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Conspiracy Facts",
+      "realm": "history",
+      "id": "conspiracy-facts",
+      "sourceOrder": 162,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Global Control Narratives",
+      "realm": "history",
+      "id": "global-control-narratives",
+      "sourceOrder": 163,
+      "reviewStatus": "not-reviewed",
+      "description": "Examine narrow documented claims separately from unsupported assertions of coordination."
+    },
+    {
+      "title": "Hidden History Concepts",
+      "realm": "history",
+      "id": "hidden-history-concepts",
+      "sourceOrder": 164,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Suppressed Knowledge Concepts",
+      "realm": "history",
+      "id": "suppressed-knowledge-concepts",
+      "sourceOrder": 165,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Group Consciousness Practices",
+      "realm": "community",
+      "id": "group-consciousness-practices",
+      "sourceOrder": 166,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Community Healing",
+      "realm": "community",
+      "id": "community-healing",
+      "sourceOrder": 167,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Uniting Communities",
+      "realm": "community",
+      "id": "uniting-communities",
+      "sourceOrder": 168,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Holistic Education",
+      "realm": "community",
+      "id": "holistic-education",
+      "sourceOrder": 169,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Human Sovereignty Concepts",
+      "realm": "community",
+      "id": "human-sovereignty-concepts",
+      "sourceOrder": 170,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Decentralized Community Models",
+      "realm": "community",
+      "id": "decentralized-community-models",
+      "sourceOrder": 171,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Off-Grid Living",
+      "realm": "community",
+      "id": "off-grid-living",
+      "sourceOrder": 172,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Sustainable Living",
+      "realm": "community",
+      "id": "sustainable-living",
+      "sourceOrder": 173,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Ecological Consciousness",
+      "realm": "community",
+      "id": "ecological-consciousness",
+      "sourceOrder": 174,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Children-Centered Future Philosophy",
+      "realm": "community",
+      "id": "children-centered-future-philosophy",
+      "sourceOrder": 175,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Hero Archetype Concepts",
+      "realm": "community",
+      "id": "hero-archetype-concepts",
+      "sourceOrder": 176,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Collective Evolution",
+      "realm": "community",
+      "id": "collective-evolution",
+      "sourceOrder": 177,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Planetary Awakening",
+      "realm": "community",
+      "id": "planetary-awakening",
+      "sourceOrder": 178,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    },
+    {
+      "title": "Spiritual Revolution Themes",
+      "realm": "community",
+      "id": "spiritual-revolution-themes",
+      "sourceOrder": 179,
+      "reviewStatus": "not-reviewed",
+      "description": "Founding topic awaiting claim-specific source review. Compare historical meaning, observable phenomena, testable hypotheses, and competing interpretations."
+    }
+  ]
+}
