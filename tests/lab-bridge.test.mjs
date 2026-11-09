@@ -50,5 +50,5 @@ test("UI requires consent and no automatic persistent storage",()=>{
   assert.match(html,/type="module"/);assert.match(js,/confirm.checked/);
   assert.match(js,/file.arrayBuffer/);assert.match(js,/URL.createObjectURL/);assert.match(js,/TextDecoder/);
   assert.doesNotMatch(js,/innerHTML|localStorage|sessionStorage|eval\(|sendBeacon|XMLHttpRequest/);
-  assert.match(js,/noopener noreferrer/);
+  assert.match(html,/rel="noopener noreferrer"/);
 });
