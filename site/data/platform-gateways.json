@@ -1,0 +1,38 @@
+[
+  {
+    "id": "web",
+    "name": "PhiOS Web",
+    "url": "https://phi-field.com/os/",
+    "source": "https://github.com/MichaelWave369/PhiOS",
+    "status": "Public entry described by PhiOS ecosystem; live launch not certified by HLJ",
+    "kind": "Web shell",
+    "summary": "Browser entry point to the local-first PhiOS experience. User opens a separate application."
+  },
+  {
+    "id": "mobile",
+    "name": "PhiOS Mobile",
+    "url": "https://michaelwave369.github.io/PhiOS-Mobile/",
+    "source": "https://github.com/MichaelWave369/PhiOS-Mobile",
+    "status": "Browser/PWA alpha preview; not Android OS firmware",
+    "kind": "Touch-first preview",
+    "summary": "Independent touch-first project with a browser/PWA experience; does not install a phone operating system."
+  },
+  {
+    "id": "xr",
+    "name": "PhiOS XR",
+    "url": "https://michaelwave369.github.io/PhiOS-XR/",
+    "source": "https://github.com/MichaelWave369/PhiOS-XR",
+    "status": "Alpha spatial shell; physical Quest qualification not established",
+    "kind": "Spatial shell",
+    "summary": "Existing WebXR application can manually import a passive scene through its ΦSpatial Scene Bridge."
+  },
+  {
+    "id": "commons",
+    "name": "PhiXRCommons",
+    "url": "https://michaelwave369.github.io/PhiXRCommons/",
+    "source": "https://github.com/MichaelWave369/PhiXRCommons",
+    "status": "Experimental WebXR lab; imported passive scene not a shared-room integration",
+    "kind": "XR research",
+    "summary": "Originator of the phi.spatial.scene.v1 read-only, opt-in scene file contract."
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "id": "welcome",
+    "number": "01",
+    "name": "The Open Door",
+    "realm": "community",
+    "topicIds": [
+      "uniting-communities",
+      "human-sovereignty-concepts"
+    ],
+    "kind": "Shared purpose",
+    "duration": "3-minute introduction",
+    "description": "Begin with one invitation: curiosity without coercion. Everyone can bring questions, experiences and doubts.",
+    "question": "What would a community of respectful disagreement look like?",
+    "action": "Open the Atlas charter",
+    "anchor": "#promise",
+    "position": {
+      "x": 50,
+      "y": 12
+    }
+  },
+  {
+    "id": "geometry",
+    "number": "02",
+    "name": "The Geometry Garden",
+    "realm": "geometry",
+    "topicIds": [
+      "sacred-geometry",
+      "platonic-solids",
+      "metatrons-cube"
+    ],
+    "kind": "Mathematics and cultural meaning",
+    "duration": "5-minute exploration",
+    "description": "Construct shapes and distinguish mathematical properties from traditions that interpret them symbolically.",
+    "question": "Which geometric relationships can be demonstrated and which are interpretations?",
+    "action": "Explore Sacred Mathematics",
+    "anchor": "#explore",
+    "position": {
+      "x": 27,
+      "y": 30
+    }
+  },
+  {
+    "id": "resonance",
+    "number": "03",
+    "name": "The Resonance Studio",
+    "realm": "fields",
+    "topicIds": [
+      "cymatics",
+      "resonance",
+      "quartz-crystal-resonance"
+    ],
+    "kind": "Measurement and simulation",
+    "duration": "5-minute experiment",
+    "description": "Compare acoustic standing-wave patterns and crystal oscillation with source-declared simulations, without promising medical effects.",
+    "question": "What changes if frequency, geometry, or boundary conditions change?",
+    "action": "Open the Laboratory Bridge",
+    "anchor": "#lab-bridge",
+    "position": {
+      "x": 73,
+      "y": 30
+    }
+  },
+  {
+    "id": "evidence",
+    "number": "04",
+    "name": "The Evidence Library",
+    "realm": "history",
+    "topicIds": [
+      "ancient-temple-acoustics",
+      "hidden-history-concepts"
+    ],
+    "kind": "Source investigation",
+    "duration": "6-minute research stop",
+    "description": "Trace an idea to historical sources and test what observations support. Keep discoveries, disagreements and uncertainty visible.",
+    "question": "What information would change our interpretation?",
+    "action": "Read research dossiers",
+    "anchor": "#research",
+    "position": {
+      "x": 27,
+      "y": 65
+    }
+  },
+  {
+    "id": "consciousness",
+    "number": "05",
+    "name": "The Consciousness Observatory",
+    "realm": "mind",
+    "topicIds": [
+      "consciousness-studies",
+      "telepathy",
+      "collective-consciousness"
+    ],
+    "kind": "Questions and responsible inquiry",
+    "duration": "5-minute guided reflection",
+    "description": "Explore subjective experience, neuroscience and extraordinary claims as different questions with different evidence requirements.",
+    "question": "How do we separate compelling experiences from universal claims?",
+    "action": "Explore the Constellation",
+    "anchor": "#constellation",
+    "position": {
+      "x": 73,
+      "y": 65
+    }
+  },
+  {
+    "id": "commons",
+    "number": "06",
+    "name": "The Joy Commons",
+    "realm": "community",
+    "topicIds": [
+      "community-healing",
+      "decentralized-community-models",
+      "holistic-education"
+    ],
+    "kind": "Community design",
+    "duration": "4-minute community challenge",
+    "description": "Translate ideas into practical cooperation: free learning, accessible tools, neighbor-to-neighbor projects and shared enjoyment.",
+    "question": "What small, verifiable improvement could people make together?",
+    "action": "Read the mission",
+    "anchor": "#promise",
+    "position": {
+      "x": 50,
+      "y": 88
+    }
+  }
+]
