@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "reviewedOn": "2026-11-09",
+  "scope": "Ten focused editorial starting dossiers. Not systematic reviews or universal verdicts on the entire topic.",
+  "classificationLabels": {
+    "measured-phenomenon": "Measured mechanism",
+    "mathematical-cultural": "Mathematics & culture",
+    "mixed-outcomes": "Mixed outcome evidence",
+    "claim-not-established": "Claim not established",
+    "contested-research": "Contested research",
+    "measured-with-limits": "Measurements with limits"
+  },
+  "sources": [
+    {
+      "id": "ucsc-chladni",
+      "title": "Chladni Figures",
+      "publisher": "UC Santa Cruz Physics Demonstration Room",
+      "kind": "University teaching demonstration",
+      "year": null,
+      "url": "https://ucscphysicsdemo.sites.ucsc.edu/physics-5b6b-demos/oscillations-and-waves/chladni-figures/"
+    },
+    {
+      "id": "smithsonian-chladni",
+      "title": "Chladni Plates",
+      "publisher": "Smithsonian National Museum of American History",
+      "kind": "Museum and history",
+      "year": null,
+      "url": "https://americanhistory.si.edu/acoustics/chladni-plates"
+    },
+    {
+      "id": "nist-quartz",
+      "title": "Time and Frequency from A to Z: Quartz Resonators",
+      "publisher": "NIST",
+      "kind": "Technical reference",
+      "year": 2023,
+      "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-q-ra"
+    },
+    {
+      "id": "nist-time",
+      "title": "Second: The Past",
+      "publisher": "NIST",
+      "kind": "Historical and technical reference",
+      "year": 2019,
+      "url": "https://www.nist.gov/si-redefinition/second/second-past"
+    },
+    {
+      "id": "nasa-schumann",
+      "title": "Observation of Schumann Resonances in the Earth's Ionosphere",
+      "publisher": "NASA Technical Reports Server",
+      "kind": "Scientific paper record",
+      "year": 2011,
+      "url": "https://ntrs.nasa.gov/citations/20120000051"
+    },
+    {
+      "id": "mathworld-solids",
+      "title": "Platonic Solid",
+      "publisher": "Wolfram MathWorld",
+      "kind": "Mathematical reference",
+      "year": null,
+      "url": "https://mathworld.wolfram.com/PlatonicSolid.html"
+    },
+    {
+      "id": "met-patterns",
+      "title": "Geometric Patterns in Islamic Art",
+      "publisher": "Metropolitan Museum of Art",
+      "kind": "Museum cultural history",
+      "year": 2001,
+      "url": "https://www.metmuseum.org/es/essays/geometric-patterns-in-islamic-art"
+    },
+    {
+      "id": "nhgri-noncoding",
+      "title": "Non-Coding DNA",
+      "publisher": "National Human Genome Research Institute",
+      "kind": "Genomics reference",
+      "year": 2026,
+      "url": "https://www.genome.gov/genetics-glossary/Non-Coding-DNA"
+    },
+    {
+      "id": "nhgri-expression",
+      "title": "Gene Expression",
+      "publisher": "National Human Genome Research Institute",
+      "kind": "Genomics reference",
+      "year": 2026,
+      "url": "https://www.genome.gov/genetics-glossary/Gene-Expression"
+    },
+    {
+      "id": "breathing-review",
+      "title": "Breathing Practices for Stress and Anxiety Reduction: Systematic Review",
+      "publisher": "PubMed indexed journal article",
+      "kind": "Systematic review",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38137060/"
+    },
+    {
+      "id": "breathing-control",
+      "title": "Effect of coherent breathing on mental health and wellbeing: a randomized placebo-controlled trial",
+      "publisher": "PubMed indexed journal article",
+      "kind": "Randomized placebo-controlled trial",
+      "year": 2023,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38092805/"
+    },
+    {
+      "id": "meditation-nccih",
+      "title": "Meditation and Mindfulness: Effectiveness and Safety",
+      "publisher": "NIH National Center for Complementary and Integrative Health",
+      "kind": "Evidence overview",
+      "year": 2022,
+      "url": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety"
+    },
+    {
+      "id": "water-cowan",
+      "title": "Ultrafast memory loss and energy redistribution in the hydrogen bond network of liquid H2O",
+      "publisher": "Nature",
+      "kind": "Peer-reviewed experiment",
+      "year": 2005,
+      "url": "https://www.nature.com/articles/nature03383"
+    },
+    {
+      "id": "water-review",
+      "title": "Water Dynamics in the Hydration Shells of Biomolecules",
+      "publisher": "Chemical Reviews (open-access at PMC)",
+      "kind": "Scientific review",
+      "year": 2017,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5571470/"
+    },
+    {
+      "id": "homeopathy-nccih",
+      "title": "Homeopathy: What You Need To Know",
+      "publisher": "NIH National Center for Complementary and Integrative Health",
+      "kind": "Clinical evidence overview",
+      "year": null,
+      "url": "https://www.nccih.nih.gov/health/homeopathy/"
+    },
+    {
+      "id": "psi-meta",
+      "title": "Anomalous perception in a Ganzfeld condition: a meta-analysis",
+      "publisher": "F1000Research (open-access at PMC)",
+      "kind": "Registered-report meta-analysis",
+      "year": 2024,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11134153/"
+    },
+    {
+      "id": "psi-replication",
+      "title": "The Transparent Psi Project: multi-laboratory replication",
+      "publisher": "Royal Society Open Science (open-access at PMC)",
+      "kind": "Multi-laboratory preregistered replication",
+      "year": 2023,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9890107/"
+    },
+    {
+      "id": "stonehenge",
+      "title": "Using scale modelling to assess the prehistoric acoustics of Stonehenge",
+      "publisher": "Journal of Archaeological Science",
+      "kind": "Peer-reviewed scale-model experiment",
+      "year": 2020,
+      "url": "https://doi.org/10.1016/j.jas.2020.105218"
+    },
+    {
+      "id": "malta",
+      "title": "An archaeoacoustic study of the Ħal Saflieni Hypogeum on Malta",
+      "publisher": "Antiquity",
+      "kind": "Peer-reviewed field study",
+      "year": 2017,
+      "url": "https://doi.org/10.15184/aqy.2016.258"
+    }
+  ],
+  "dossiers": [
+    {
+      "id": "cymatics",
+      "topicId": "cymatics",
+      "classification": "measured-phenomenon",
+      "question": "Why does sound produce geometric patterns in sand or liquids?",
+      "supported": "Vibrating plates can support standing-wave modes. Sand gathers near nodal lines; geometry and driving conditions affect the shapes.",
+      "boundary": "A Chladni pattern does not by itself demonstrate biological activation, a specific three-dimensional hidden object, or medical efficacy.",
+      "alternative": "Visually similar patterns can arise from different boundary conditions, forces, particle sizes and fluids.",
+      "nextTest": "Record plate material, boundaries, drive frequency and modal shapes; test changes against predicted nodes.",
+      "culturalNote": "Chladni figures also have a history in musical instrument making and visual arts.",
+      "safety": "Use safe sound levels and appropriately secured laboratory equipment.",
+      "sourceIds": [
+        "ucsc-chladni",
+        "smithsonian-chladni"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "quartz-crystal-resonance",
+      "topicId": "quartz-crystal-resonance",
+      "classification": "measured-phenomenon",
+      "question": "What does a quartz crystal actually do when electrically driven?",
+      "supported": "Piezoelectric quartz resonators strain under applied voltage and enable highly stable electronic oscillators; cut, dimensions and temperature matter.",
+      "boundary": "This does not show that carrying a quartz crystal heals illness or transmits intention.",
+      "alternative": "Oscillator behavior depends on circuit feedback and engineered resonance, not a universal wellness frequency.",
+      "nextTest": "Compare specified resonator frequencies and temperature drift using ordinary instruments and documented components.",
+      "culturalNote": "Crystals also have aesthetic and symbolic roles distinct from electronic engineering.",
+      "safety": "Do not confuse commercial healing claims with electronic component specifications.",
+      "sourceIds": [
+        "nist-quartz",
+        "nist-time"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "schumann-resonance-earths-heartbeat",
+      "topicId": "schumann-resonance-earths-heartbeat",
+      "classification": "measured-phenomenon",
+      "question": "What are Schumann resonances, and what can they tell us?",
+      "supported": "Lightning excites electromagnetic modes in the cavity between Earth’s surface and ionosphere; these are measurable phenomena relevant to atmospheric science.",
+      "boundary": "No conclusion about consciousness synchronization or a universal healing frequency follows from their existence.",
+      "alternative": "A correlation between an environmental signal and a human measure could involve shared daily cycles, instrumentation or chance.",
+      "nextTest": "Use calibrated field measurements and preregistered physiological comparisons, with multiple controls.",
+      "culturalNote": "Earth's heartbeat is a metaphor, not the scientific name of a biological pulse.",
+      "safety": "No self-exposure or therapeutic recommendations follow from this entry.",
+      "sourceIds": [
+        "nasa-schumann"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "sacred-geometry",
+      "topicId": "sacred-geometry",
+      "classification": "mathematical-cultural",
+      "question": "Which geometric relationships are proven, and how have cultures used them?",
+      "supported": "Circles, polygons, symmetry and polyhedra have demonstrable mathematical properties. Geometric designs also carry documented artistic and cultural meanings.",
+      "boundary": "Mathematical beauty does not establish a hidden energy field, cosmic intention, or the antiquity of every modern symbol.",
+      "alternative": "Similar motifs can arise through shared construction techniques, independent invention or cultural exchange.",
+      "nextTest": "Reconstruct a motif with compass-and-straightedge steps; distinguish proof from interpretive symbolism.",
+      "culturalNote": "Islamic geometric art has its own complex histories and should not be flattened into a universal mystical tradition.",
+      "safety": "Credit specific traditions and makers instead of assigning a single universal origin.",
+      "sourceIds": [
+        "mathworld-solids",
+        "met-patterns"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "dna-activation",
+      "topicId": "dna-activation",
+      "classification": "claim-not-established",
+      "question": "What exactly is meant by 'activating DNA'?",
+      "supported": "Gene expression and regulation are observable cellular mechanisms. Some non-coding DNA sequences have regulatory functions.",
+      "boundary": "The source material does not support a claim that sound, symbols or thought unlock dormant supernatural capacities or a hidden extra DNA code.",
+      "alternative": "Spiritual activation may be metaphorical; biological gene expression is a separate, testable mechanism.",
+      "nextTest": "Define a proposed molecular endpoint, cell type and comparison group before claiming genetic change.",
+      "culturalNote": "The term may represent a personal or spiritual framework rather than a laboratory process.",
+      "safety": "Avoid experimental self-treatment, false genetic promises or replacing medical assessment.",
+      "sourceIds": [
+        "nhgri-noncoding",
+        "nhgri-expression"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "breathwork",
+      "topicId": "breathwork",
+      "classification": "mixed-outcomes",
+      "question": "What outcomes have been measured in breathing interventions?",
+      "supported": "A systematic review found benefits for some stress/anxiety interventions; breathing pace and study design vary.",
+      "boundary": "A placebo-controlled trial found no advantage of a specific coherent-breathing pace over matched attention control for mental-health measures. Universal cure claims are not justified.",
+      "alternative": "Relaxation, guided attention and expectancy can account for part of a reported effect; physiological changes do not automatically establish clinical benefit.",
+      "nextTest": "Compare a specified gentle breathing practice with a matched control, tracking outcomes and adverse effects.",
+      "culturalNote": "Breathing practices occur across different cultural and contemplative traditions.",
+      "safety": "Avoid forceful breath holds or hyperventilation, especially with relevant medical conditions.",
+      "sourceIds": [
+        "breathing-review",
+        "breathing-control"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "meditation",
+      "topicId": "meditation",
+      "classification": "mixed-outcomes",
+      "question": "What does clinical evidence suggest meditation can and cannot do?",
+      "supported": "Some mindfulness interventions may help with symptoms such as anxiety, mood or sleep, although quality and outcomes differ.",
+      "boundary": "Meditation is not proven to treat every condition or produce psychic powers; adverse experiences can occur.",
+      "alternative": "Expectation, social support, attention and comparison-group design can influence findings.",
+      "nextTest": "Track named outcomes against an active comparator, record adherence and adverse events.",
+      "culturalNote": "Meditation traditions are diverse, with meanings that extend beyond clinical outcome studies.",
+      "safety": "Do not substitute meditation for needed care; stop practices that cause significant distress.",
+      "sourceIds": [
+        "meditation-nccih"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "water-memory-concepts",
+      "topicId": "water-memory-concepts",
+      "classification": "claim-not-established",
+      "question": "Does water preserve a specific information pattern after its source is removed?",
+      "supported": "Ultrafast spectroscopy and reviews show that ordinary liquid water has a rapidly changing hydrogen-bond network.",
+      "boundary": "Rapid molecular rearrangement does not by itself test every proposed 'water memory' claim, but no reliable therapeutic memory mechanism is established by these studies.",
+      "alternative": "Contamination, dissolved solutes, sample handling, expectations and ordinary material changes can imitate purported memory effects.",
+      "nextTest": "Predefine the claimed stored signal, blind samples, control contamination and repeat measurements across labs.",
+      "culturalNote": "Water symbolism and ritual uses are independent of claims about persistent molecular information.",
+      "safety": "Do not rely on water-memory or highly diluted remedies instead of effective care.",
+      "sourceIds": [
+        "water-cowan",
+        "water-review",
+        "homeopathy-nccih"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "telepathy",
+      "topicId": "telepathy",
+      "classification": "contested-research",
+      "question": "Can information pass between people without known sensory channels?",
+      "supported": "A 2024 Ganzfeld meta-analysis reported a small positive aggregate effect under its selected methods.",
+      "boundary": "A large preregistered multi-lab replication of a different ESP paradigm found chance-level results; neither source establishes an accepted telepathic mechanism.",
+      "alternative": "Study selection, sensory leakage, analytical flexibility, different protocols and replication can change interpretation.",
+      "nextTest": "Use independent preregistration, secure randomization, strict blinding, replication and open data.",
+      "culturalNote": "Claims about mind-to-mind communication have longstanding cultural meanings, separate from controlled experimental demonstration.",
+      "safety": "Avoid treating subjective coincidences as evidence about another person's private thoughts.",
+      "sourceIds": [
+        "psi-meta",
+        "psi-replication"
+      ],
+      "review": "editorial starter; not a systematic review"
+    },
+    {
+      "id": "ancient-temple-acoustics",
+      "topicId": "ancient-temple-acoustics",
+      "classification": "measured-with-limits",
+      "question": "How can acoustics inform interpretation of archaeological places?",
+      "supported": "Scale-model tests estimated acoustic effects at Stonehenge, while measurements at Malta's Hypogeum supported some, not all, earlier acoustic claims.",
+      "boundary": "Acoustic properties alone cannot prove builders intentionally encoded special frequencies or healing technologies.",
+      "alternative": "Room dimensions and materials cause reverberation even without deliberate acoustic engineering.",
+      "nextTest": "Compare measured impulse responses with geometry-based acoustic predictions, and separate measurements from historical intentions.",
+      "culturalNote": "Ritual sound may matter culturally; archaeological inference requires multiple independent evidence types.",
+      "safety": "Protect sites and follow custodians' permissions; do not conduct damaging experiments.",
+      "sourceIds": [
+        "stonehenge",
+        "malta"
+      ],
+      "review": "editorial starter; not a systematic review"
+    }
+  ]
+}

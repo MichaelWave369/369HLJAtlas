@@ -3,8 +3,8 @@
 ## HLJ-001 — Founding Atlas
 Import the full 179-topic list, build nine realms, searchable detail cards, three research questions per topic, 14 bounded connections, existing-project gateways, accessibility basics, tests and Pages workflow.
 
-## HLJ-002 — Evidence dossiers
-Add claim-specific citations and evidence records for Cymatics, Quartz Crystal Resonance, Schumann Resonance, Sacred Geometry, DNA Activation, Breathwork, Meditation, Water Memory Concepts, Telepathy and Ancient Temple Acoustics. Each documented claim needs sources, limitations and counterevidence.
+## HLJ-002 — Evidence dossiers (implemented as editorial starters)
+Ten source-linked dossiers with limitations, alternatives, cultural notes, and two-way comparison. These are editorial starting points, not exhaustive source audits. Expand claim-level provenance and independent review before declaring any specific claim verified.
 
 ## HLJ-003 — Exploratory graph
 Build source-pin relationships, keyboard access, claim comparisons, hypothesis notebooks and exportable research records. Proximity and correlation never automatically mean causation.
