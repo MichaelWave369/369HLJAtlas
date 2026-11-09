@@ -1,11 +1,45 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09161d"><meta name="description" content="A research atlas bridging geometry, resonance, consciousness and community through Hope, Love and Joy."><title>369 HLJ Atlas | Hope · Love · Joy</title><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09161d"><meta name="description" content="A research atlas bridging geometry, resonance, consciousness and community through Hope, Love and Joy."><title>369 HLJ Atlas | Hope · Love · Joy</title><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script><script src="./constellation.js" defer></script></head>
 <body><a class="skip" href="#explore">Skip to atlas explorer</a><div class="aurora" aria-hidden="true"></div>
-<header class="wrap top"><a class="brand" href="./"><span class="phi">Φ</span><span><strong>369 HLJ ATLAS</strong><small>HOPE / LOVE / JOY</small></span></a><nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#research">Research</a><a href="#connections">Crossroads</a><a href="#labs">Laboratories</a><a href="#promise">Our promise</a></nav><a class="source" href="https://github.com/MichaelWave369/369HLJAtlas" target="_blank" rel="noopener noreferrer">Source ↗</a></header>
+<header class="wrap top"><a class="brand" href="./"><span class="phi">Φ</span><span><strong>369 HLJ ATLAS</strong><small>HOPE / LOVE / JOY</small></span></a><nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#constellation">Constellation</a><a href="#research">Research</a><a href="#connections">Crossroads</a><a href="#labs">Laboratories</a><a href="#promise">Our promise</a></nav><a class="source" href="https://github.com/MichaelWave369/369HLJAtlas" target="_blank" rel="noopener noreferrer">Source ↗</a></header>
 <main><section class="wrap hero"><div class="herotext"><p class="eyebrow">✦ A BRIDGE FOR CURIOUS MINDS</p><h1>We can seek the truth <em>together.</em></h1><p class="lead">An open exploration of ancient wisdom, measurable science, human consciousness and the joy of discovery. No agreement required. Evidence welcome.</p><div class="actions"><a class="button primary" href="#explore">Explore the Atlas ↗</a><a class="button outline" href="#promise">Our research promise</a></div><div class="stats"><span><b id="total">179</b> FOUNDING TOPICS</span><span><b>09</b> KNOWLEDGE REALMS</span><span><b>03</b> RESEARCH LENSES</span></div></div><div class="geometry" role="img" aria-label="Decorative interlocking circles symbolizing connection"><svg viewBox="0 0 500 500" aria-hidden="true"><circle cx="250" cy="250" r="235" fill="none" stroke="#527e79" stroke-width="1"/><g fill="none" stroke="#8bdacb" stroke-opacity=".7" stroke-width="1.4"><circle cx="250" cy="250" r="145"/><circle cx="250" cy="250" r="84"/><circle cx="250" cy="166" r="84"/><circle cx="250" cy="334" r="84"/><circle cx="323" cy="208" r="84"/><circle cx="177" cy="208" r="84"/><circle cx="323" cy="292" r="84"/><circle cx="177" cy="292" r="84"/><path d="M250 105 375 322 125 322Z M250 395 125 178 375 178Z"/></g><circle cx="250" cy="250" r="5" fill="#efc891"/></svg><p>DIFFERENT PATHS · SHARED CURIOSITY</p></div></section>
 <section class="wrap lenses" aria-labelledby="lenses-title"><p class="eyebrow">THREE RESEARCH LENSES</p><h2 id="lenses-title">Wonder with a compass.</h2><div class="lensgrid"><article><small>01 / SCIENCE</small><h3>Observe</h3><p>What is measurable and reproducible? Which sources support a precise claim?</p></article><article><small>02 / EXPERIMENT</small><h3>Question</h3><p>Which hypotheses, controls, alternatives and failures would teach us something?</p></article><article><small>03 / CULTURE</small><h3>Understand</h3><p>Where did a tradition come from, and what does it mean to its practitioners?</p></article></div></section>
 <section class="wrap explorer" id="explore"><p class="eyebrow">NINE KNOWLEDGE REALMS</p><h2>Begin anywhere.</h2><p class="sub">All 179 founding topics are included. Listing a claim is not endorsing it. Every entry starts unreviewed.</p><div id="realms" class="realmgrid"></div><div class="browser"><div class="browsertop"><div><p class="eyebrow">KNOWLEDGE REGISTRY</p><h3 id="current-realm">All topics</h3></div><span id="count" aria-live="polite"></span></div><div class="controls"><label class="search"><span class="sr">Search topics</span><input id="search" type="search" placeholder="Search resonance, geometry, healing..."></label><button id="reset" type="button">Reset filters</button></div><div class="browsergrid"><div><div id="topics" class="topics" aria-live="polite"></div><p id="empty" hidden>No matching topics. Try another search.</p></div><aside id="detail" tabindex="-1" aria-labelledby="detail-heading"><p class="eyebrow">RESEARCH STARTING POINT</p><h3 id="detail-heading">Choose a topic.</h3><p>Open a research card to find questions and related concepts.</p></aside></div></div></section>
 
+
+<section class="wrap section constellation-section" id="constellation" aria-labelledby="constellation-title">
+  <p class="eyebrow">HLJ-003 / INTERACTIVE KNOWLEDGE CONSTELLATION</p>
+  <h2 id="constellation-title">Every question has a place.</h2>
+  <p class="sub">Explore all 179 topics by realm. Solid lines show taxonomy membership. Dashed lines mark 14 narrowly described provisional relationships, not proof of cause. Gold rings identify the 10 topics with source-linked research dossiers.</p>
+  <div class="cosmos-toolbar" role="group" aria-label="Constellation filters">
+    <label>Knowledge realm <select id="cosmos-realm"><option value="all">All nine realms</option></select></label>
+    <label>Find a topic <input id="cosmos-search" type="search" autocomplete="off" placeholder="Search all 179 topics"></label>
+    <label class="cosmos-toggle"><input id="cosmos-links" type="checkbox" checked> Show provisional links</label>
+    <label class="cosmos-toggle"><input id="cosmos-sourced" type="checkbox"> Dossiers only</label>
+    <button id="cosmos-clear" type="button">Clear filters</button>
+  </div>
+  <div class="constellation-layout">
+    <div class="cosmos-graphic">
+      <div class="cosmos-graphic-head"><span class="eyebrow">TOPIC NETWORK</span><span id="cosmos-visible" aria-live="polite">179 topics</span></div>
+      <div class="cosmos-stage"><svg id="cosmos-svg" viewBox="0 0 1080 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interactive map of knowledge realms and topic nodes. Use the accessible topic index alongside for keyboard navigation."></svg></div>
+      <div class="cosmos-map-controls"><div class="cosmos-legend"><span><i class="taxonomy-key"></i> Shared realm</span><span><i class="tentative-key"></i> Provisional connection</span><span><i class="source-key"></i> Research dossier</span></div><div class="cosmos-zoom" role="group" aria-label="Map zoom controls"><button id="cosmos-zoom-in" type="button" aria-label="Zoom in">+</button><button id="cosmos-zoom-out" type="button" aria-label="Zoom out">−</button><button id="cosmos-reset-view" type="button">Reset view</button></div></div>
+      <p class="cosmos-hint">Click a node to inspect it, drag the background to pan, or use the topic index. The node positions are a categorical illustration, not a scientific measurement of conceptual distance.</p>
+    </div>
+    <div class="cosmos-side">
+      <div class="cosmos-index">
+        <h3>Accessible topic index</h3><p>Use Tab and Enter to select any topic. Search and realm filters affect both views.</p><div id="cosmos-list" class="cosmos-topic-list" role="list" aria-label="Filtered knowledge topics"></div><p id="cosmos-empty" hidden>No matching topics. Clear or change the filters.</p>
+      </div>
+      <article id="cosmos-inspector" class="cosmos-inspector" tabindex="-1" aria-labelledby="cosmos-inspector-title"><p class="eyebrow">TOPIC INSPECTOR</p><h3 id="cosmos-inspector-title">Choose a question.</h3><p>See its research context and documented relationship boundaries.</p></article>
+      <section class="cosmos-notebook" aria-labelledby="cosmos-notebook-title">
+        <h3 id="cosmos-notebook-title">Session research notebook</h3>
+        <p>Jot down observations, alternatives and falsifiers for the selected topic. Notes stay in this tab's memory until you export them; nothing is automatically saved or uploaded.</p>
+        <label for="cosmos-note">Working hypothesis or question</label>
+        <textarea id="cosmos-note" rows="5" maxlength="8000" placeholder="What would change my mind? What evidence would I need?"></textarea>
+        <div class="cosmos-note-actions"><button id="cosmos-export" type="button">Export research packet (JSON)</button><span id="cosmos-note-status" role="status" aria-live="polite"></span></div>
+      </section>
+    </div>
+  </div>
+</section>
 <section class="wrap section" id="research" aria-labelledby="research-title">
   <p class="eyebrow">HLJ-002 / SOURCE-BACKED INQUIRY</p>
   <h2 id="research-title">The research library.</h2>
