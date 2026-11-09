@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09161d"><meta name="description" content="A research atlas bridging geometry, resonance, consciousness and community through Hope, Love and Joy."><title>369 HLJ Atlas | Hope · Love · Joy</title><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script><script src="./constellation.js" defer></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09161d"><meta name="description" content="A research atlas bridging geometry, resonance, consciousness and community through Hope, Love and Joy."><title>369 HLJ Atlas | Hope · Love · Joy</title><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script><script src="./constellation.js" defer></script><script src="./lab-bridge.js" type="module"></script></head>
 <body><a class="skip" href="#explore">Skip to atlas explorer</a><div class="aurora" aria-hidden="true"></div>
-<header class="wrap top"><a class="brand" href="./"><span class="phi">Φ</span><span><strong>369 HLJ ATLAS</strong><small>HOPE / LOVE / JOY</small></span></a><nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#constellation">Constellation</a><a href="#research">Research</a><a href="#connections">Crossroads</a><a href="#labs">Laboratories</a><a href="#promise">Our promise</a></nav><a class="source" href="https://github.com/MichaelWave369/369HLJAtlas" target="_blank" rel="noopener noreferrer">Source ↗</a></header>
+<header class="wrap top"><a class="brand" href="./"><span class="phi">Φ</span><span><strong>369 HLJ ATLAS</strong><small>HOPE / LOVE / JOY</small></span></a><nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#constellation">Constellation</a><a href="#research">Research</a><a href="#connections">Crossroads</a><a href="#lab-bridge">Lab Bridge</a><a href="#labs">Laboratories</a><a href="#promise">Our promise</a></nav><a class="source" href="https://github.com/MichaelWave369/369HLJAtlas" target="_blank" rel="noopener noreferrer">Source ↗</a></header>
 <main><section class="wrap hero"><div class="herotext"><p class="eyebrow">✦ A BRIDGE FOR CURIOUS MINDS</p><h1>We can seek the truth <em>together.</em></h1><p class="lead">An open exploration of ancient wisdom, measurable science, human consciousness and the joy of discovery. No agreement required. Evidence welcome.</p><div class="actions"><a class="button primary" href="#explore">Explore the Atlas ↗</a><a class="button outline" href="#promise">Our research promise</a></div><div class="stats"><span><b id="total">179</b> FOUNDING TOPICS</span><span><b>09</b> KNOWLEDGE REALMS</span><span><b>03</b> RESEARCH LENSES</span></div></div><div class="geometry" role="img" aria-label="Decorative interlocking circles symbolizing connection"><svg viewBox="0 0 500 500" aria-hidden="true"><circle cx="250" cy="250" r="235" fill="none" stroke="#527e79" stroke-width="1"/><g fill="none" stroke="#8bdacb" stroke-opacity=".7" stroke-width="1.4"><circle cx="250" cy="250" r="145"/><circle cx="250" cy="250" r="84"/><circle cx="250" cy="166" r="84"/><circle cx="250" cy="334" r="84"/><circle cx="323" cy="208" r="84"/><circle cx="177" cy="208" r="84"/><circle cx="323" cy="292" r="84"/><circle cx="177" cy="292" r="84"/><path d="M250 105 375 322 125 322Z M250 395 125 178 375 178Z"/></g><circle cx="250" cy="250" r="5" fill="#efc891"/></svg><p>DIFFERENT PATHS · SHARED CURIOSITY</p></div></section>
 <section class="wrap lenses" aria-labelledby="lenses-title"><p class="eyebrow">THREE RESEARCH LENSES</p><h2 id="lenses-title">Wonder with a compass.</h2><div class="lensgrid"><article><small>01 / SCIENCE</small><h3>Observe</h3><p>What is measurable and reproducible? Which sources support a precise claim?</p></article><article><small>02 / EXPERIMENT</small><h3>Question</h3><p>Which hypotheses, controls, alternatives and failures would teach us something?</p></article><article><small>03 / CULTURE</small><h3>Understand</h3><p>Where did a tradition come from, and what does it mean to its practitioners?</p></article></div></section>
 <section class="wrap explorer" id="explore"><p class="eyebrow">NINE KNOWLEDGE REALMS</p><h2>Begin anywhere.</h2><p class="sub">All 179 founding topics are included. Listing a claim is not endorsing it. Every entry starts unreviewed.</p><div id="realms" class="realmgrid"></div><div class="browser"><div class="browsertop"><div><p class="eyebrow">KNOWLEDGE REGISTRY</p><h3 id="current-realm">All topics</h3></div><span id="count" aria-live="polite"></span></div><div class="controls"><label class="search"><span class="sr">Search topics</span><input id="search" type="search" placeholder="Search resonance, geometry, healing..."></label><button id="reset" type="button">Reset filters</button></div><div class="browsergrid"><div><div id="topics" class="topics" aria-live="polite"></div><p id="empty" hidden>No matching topics. Try another search.</p></div><aside id="detail" tabindex="-1" aria-labelledby="detail-heading"><p class="eyebrow">RESEARCH STARTING POINT</p><h3 id="detail-heading">Choose a topic.</h3><p>Open a research card to find questions and related concepts.</p></aside></div></div></section>
@@ -54,6 +54,44 @@
   </div>
 </section>
 <section class="wrap section" id="connections"><p class="eyebrow">CROSSROADS</p><h2>Connections, not conclusions.</h2><p class="sub">A relation is labeled narrowly. Shared symbols and patterns do not automatically imply causation.</p><div id="edges" class="cards"></div></section>
+
+<section class="wrap section lab-bridge-section" id="lab-bridge" aria-labelledby="lab-bridge-title">
+  <p class="eyebrow">HLJ-004 / REVIEW-BEFORE-APPLY LABORATORY BRIDGE</p>
+  <h2 id="lab-bridge-title">Bring your experiments into the conversation.</h2>
+  <p class="sub">Inspect a JSON receipt exported by an existing Phi369 laboratory. The Atlas recognizes narrowly documented formats, extracts a limited summary, and asks you to explicitly approve it. Nothing is uploaded, transmitted to another project, or added to scientific evidence automatically.</p>
+  <div class="bridge-grid">
+    <div class="bridge-source">
+      <h3>1. Export from an existing lab</h3>
+      <p>Open a laboratory, create or select a view, and export its JSON. Bring the downloaded file back here.</p>
+      <div class="bridge-launch-links">
+        <a href="https://michaelwave369.github.io/AquaCymatics369/" target="_blank" rel="noopener noreferrer">Open AquaCymatics369 ↗</a>
+        <a href="https://michaelwave369.github.io/phi369-element-spiral-atlas/" target="_blank" rel="noopener noreferrer">Open Element Spiral Atlas ↗</a>
+      </div>
+      <p class="bridge-note">Supported: AquaCymatics369 reconstruction receipts (v0.2-image-reconstruction-lane), Element Spiral Atlas v2.0 view exports, v1 receipts, and v1 research snapshots. Other formats are refused until their contracts are reviewed.</p>
+    </div>
+    <div class="bridge-import">
+      <h3>2. Inspect locally</h3>
+      <label for="bridge-file">Choose a JSON export (up to 512 KiB)</label>
+      <input id="bridge-file" type="file" accept=".json,application/json">
+      <p id="bridge-message" class="bridge-message" role="status" aria-live="polite">No receipt selected. No file data leaves this browser.</p>
+      <section id="bridge-preview" class="bridge-preview" aria-labelledby="bridge-preview-title" hidden>
+        <p class="eyebrow">SOURCE DECLARATION · NOT INDEPENDENT VERIFICATION</p>
+        <h4 id="bridge-preview-title">Receipt preview</h4>
+        <dl id="bridge-fields"></dl>
+        <p id="bridge-boundary" class="bridge-boundary"></p>
+        <label for="bridge-topic">Optional Atlas topic association (editorial only)</label>
+        <select id="bridge-topic"><option value="">No topic association</option></select>
+        <label class="bridge-consent"><input id="bridge-confirm" type="checkbox"> I reviewed this source-declared record and understand it is not independently measured or verified by HLJ Atlas.</label>
+        <button id="bridge-approve" type="button" disabled>Add reviewed record to session</button>
+      </section>
+    </div>
+  </div>
+  <div class="bridge-packet">
+    <div><h3>3. Build a local research packet</h3><p>Approved summaries are held only in this tab. Export them as a portable JSON packet, or clear the session. The source files stay on your computer and are never copied into the packet.</p></div>
+    <div id="bridge-records" aria-live="polite"><p>No reviewed records in this session.</p></div>
+    <div class="bridge-actions"><button id="bridge-export" type="button" disabled>Export Lab Bridge packet JSON</button><button id="bridge-clear" type="button" disabled>Clear session records</button><span id="bridge-export-message" role="status" aria-live="polite"></span></div>
+  </div>
+</section>
 <section class="wrap section" id="labs"><p class="eyebrow">EXISTING PHI369 LABORATORIES</p><h2>Explore what already exists.</h2><p class="sub">Independent project gateways, not duplicated modules or assumed integrations.</p><div id="laboratories" class="labgrid"></div></section>
 <section class="wrap promise" id="promise"><p class="eyebrow">THE HLJ PROMISE</p><blockquote>We do not need to believe the same things to build a world where we can all belong.</blockquote><p>Hope invites questions. Love asks us to listen. Joy gives us a reason to keep building.</p><a href="https://github.com/MichaelWave369/369HLJAtlas/blob/main/README.md" class="button outline">Our mission ↗</a></section></main>
 <footer class="wrap"><span>Φ 369 HLJ ATLAS · HOPE / LOVE / JOY</span><span>Research preview · Not medical advice · No tracking</span></footer></body></html>

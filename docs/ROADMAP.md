@@ -9,8 +9,8 @@ Ten source-linked dossiers with limitations, alternatives, cultural notes, and t
 ## HLJ-003 — Exploratory graph (implemented as first constellation)
 179 topic nodes, nine realm hubs, fourteen existing provisional edges, ten dossier source pins, keyboard-operable topic index, pan/zoom, session-only notes and manual research packet export. This is a deterministic visualization, not inferred connections or reviewed scientific results. Continue with deeper claim-level source linkage and optional validated import after browser testing.
 
-## HLJ-004 — Laboratory contracts
-Inspect actual import/export formats before linking AquaCymatics369 and other research apps beyond simple navigation. Preserve local-first consent and validate untrusted import files.
+## HLJ-004 — Laboratory contracts (manual preview implementation)
+Inspected source exports in AquaCymatics369 and Element Spiral Atlas; implemented four specific JSON shape recognizers, local-only file inspection, bounded allowlist, review and consent gate, optional explicit topic mapping, 12-record session, and explicit portable packet export. No remote APIs or actual automatic inter-project syncing. Complete manual browser and source-file qualification before claiming production readiness.
 
 ## HLJ-005 — PhiOS / Shasta Institute
 Design PhiOS Web/XR educational exhibits and independently qualify accessibility, VR comfort, optical/audio safety, licensing and physical engineering before public claims.
