@@ -41,3 +41,13 @@ MIT licensed. Built to complement the PhiOS / Phi369 Labs ecosystem without repl
 - No remote runtime source fetching; source metadata ships with the site. Third-party pages open only when you click.
 
 These are *curated starting points*, not a systematic review. No individual or outside site is described as an endorsing partner.
+
+## HLJ-003 — Knowledge Constellation
+
+- All 179 topics rendered as deterministic nodes around nine editorial realm hubs.
+- Only fourteen previously documented provisional relations appear as dashed connections; ten gold source pins link to starter dossiers.
+- Search, realm selection, research-only filtering, detailed source inspector, zoom and pan, and keyboard-accessible topic index.
+- Session-only private research notebook with explicit local JSON export, no automatic storage or network upload.
+- Shareable `?topic=<id>#constellation` URLs and dedicated contract/integrity tests.
+
+**Important:** Positions illustrate taxonomy, not quantitative closeness. Relationship lines are not assertions of causality. Starter dossiers do not replace independent source review.
