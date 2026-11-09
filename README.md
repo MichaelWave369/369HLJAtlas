@@ -31,3 +31,13 @@ Separate scientific evidence from hypothesis, personal experience and cultural m
 **HLJ refers to Hope, Love and Joy**, not a claimed partnership with Hope LoveJoy, HOPEvolve or another individual. Collaboration requires explicit consent.
 
 MIT licensed. Built to complement the PhiOS / Phi369 Labs ecosystem without replacing existing laboratories.
+
+## HLJ-002 — The Research Library
+
+- Ten editorial evidence dossiers, each with a precise focus question, narrow supported finding, evidence boundary, alternative explanations, next test and safety/cultural notes.
+- Nineteen linked external references from universities, museums, standards institutions, scientific papers and health evidence services. Some are directly supporting sources; some are context or counterevidence, as the prose explains.
+- Classification labels describe each **specific dossier's focus**, not all claims associated with a topic.
+- Accessible browsing, evidence-type filter, selectable research cards, side-by-side comparison and shareable `?dossier=<topic-id>` links.
+- No remote runtime source fetching; source metadata ships with the site. Third-party pages open only when you click.
+
+These are *curated starting points*, not a systematic review. No individual or outside site is described as an endorsing partner.
