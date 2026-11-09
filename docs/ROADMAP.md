@@ -12,8 +12,8 @@ Ten source-linked dossiers with limitations, alternatives, cultural notes, and t
 ## HLJ-004 — Laboratory contracts (manual preview implementation)
 Inspected source exports in AquaCymatics369 and Element Spiral Atlas; implemented four specific JSON shape recognizers, local-only file inspection, bounded allowlist, review and consent gate, optional explicit topic mapping, 12-record session, and explicit portable packet export. No remote APIs or actual automatic inter-project syncing. Complete manual browser and source-file qualification before claiming production readiness.
 
-## HLJ-005 — PhiOS / Shasta Institute
-Design PhiOS Web/XR educational exhibits and independently qualify accessibility, VR comfort, optical/audio safety, licensing and physical engineering before public claims.
+## HLJ-005 — PhiOS / Shasta Institute (digital-first gateway)
+Six-stop accessible conceptual visitor walk, source-described PhiOS Web/Mobile/XR gateways, and a bounded synthetic 19-node passive `phi.spatial.scene.v1` export for explicit manual import into PhiOS XR. No actual campus, autonomous XR control or live integration claims. Independent browser and Quest acceptance required before labeling hardware-qualified.
 
 ## Acceptance
 Tests green, 179 unique topic IDs, every topic accessible by search, browse and keyboard, external links safe, clear review status and no hidden tracking. GitHub Actions passing is not a substitute for manual browser testing.

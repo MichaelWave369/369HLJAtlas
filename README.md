@@ -57,3 +57,9 @@ These are *curated starting points*, not a systematic review. No individual or o
 HLJ Atlas now recognizes **four precise export shapes** from AquaCymatics369 and PHI369 Element Spiral Atlas. Users select a small local JSON file, inspect the *producer-declared* details, explicitly approve an allowlisted summary, and optionally associate a topic. Approved summaries remain in memory only until explicitly exported in a portable JSON research packet or cleared.
 
 This is **manual interoperability** only. It does not access any other app's browser storage, upload source files, embed third-party scripts, mutate outside projects, or authenticate laboratory findings. The source-by-source contract audit and manual acceptance guide are in [docs/LAB_BRIDGE_CONTRACTS.md](docs/LAB_BRIDGE_CONTRACTS.md).
+
+## HLJ-005 — The Shasta Institute bridge
+
+A six-stop conceptual visitor map introduces The Open Door, Geometry Garden, Resonance Studio, Evidence Library, Consciousness Observatory, and Joy Commons. The map describes a **future educational vision**, not a built or approved facility. A source-documented PhiOS gateway links to independent Web, Mobile, XR and PhiXRCommons projects; these are user-initiated links and not native installations.
+
+Click **Export passive XR scene JSON** to build a strictly bounded `phi.spatial.scene.v1` file (nine realm spheres and ten synthetic research markers). Import it explicitly via PhiOS XR's existing ΦSpatial Scene Bridge and confirm before display. No personal notes or measurements are included, and there is no automatic transfer, tracking or XR authority. See [docs/SHASTA_INSTITUTE_GATEWAY.md](docs/SHASTA_INSTITUTE_GATEWAY.md) for exact schema and Quest acceptance gates.
