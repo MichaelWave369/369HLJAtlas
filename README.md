@@ -51,3 +51,9 @@ These are *curated starting points*, not a systematic review. No individual or o
 - Shareable `?topic=<id>#constellation` URLs and dedicated contract/integrity tests.
 
 **Important:** Positions illustrate taxonomy, not quantitative closeness. Relationship lines are not assertions of causality. Starter dossiers do not replace independent source review.
+
+## HLJ-004 — Review-before-apply Lab Bridge
+
+HLJ Atlas now recognizes **four precise export shapes** from AquaCymatics369 and PHI369 Element Spiral Atlas. Users select a small local JSON file, inspect the *producer-declared* details, explicitly approve an allowlisted summary, and optionally associate a topic. Approved summaries remain in memory only until explicitly exported in a portable JSON research packet or cleared.
+
+This is **manual interoperability** only. It does not access any other app's browser storage, upload source files, embed third-party scripts, mutate outside projects, or authenticate laboratory findings. The source-by-source contract audit and manual acceptance guide are in [docs/LAB_BRIDGE_CONTRACTS.md](docs/LAB_BRIDGE_CONTRACTS.md).
