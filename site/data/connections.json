@@ -1,0 +1,114 @@
+[
+  {
+    "id": "c1",
+    "a": "cymatics",
+    "b": "resonance",
+    "relation": "physical relation",
+    "note": "Standing-wave behavior can contribute to patterned motion under specific conditions.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c2",
+    "a": "cymatics",
+    "b": "harmonics",
+    "relation": "physical relation",
+    "note": "Harmonic modes can produce different nodal patterns depending on the medium.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c3",
+    "a": "quartz-crystal-resonance",
+    "b": "crystal-oscillators",
+    "relation": "engineering",
+    "note": "Quartz resonance is used in electronic oscillator circuits.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c4",
+    "a": "sacred-geometry",
+    "b": "platonic-solids",
+    "relation": "mathematics",
+    "note": "Regular solids form a mathematically defined class of polyhedra.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c5",
+    "a": "metatrons-cube",
+    "b": "platonic-solids",
+    "relation": "geometric construction",
+    "note": "Some constructions illustrate projections of solids; exact mappings must be shown.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c6",
+    "a": "geodesic-architecture",
+    "b": "structural-geometry",
+    "relation": "engineering",
+    "note": "Structural properties follow geometry, material assumptions and loads.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c7",
+    "a": "schumann-resonance-earths-heartbeat",
+    "b": "electromagnetic-fields",
+    "relation": "physical phenomenon",
+    "note": "Schumann resonances are electromagnetic modes in the Earth-ionosphere cavity.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c8",
+    "a": "3-6-9-numerology",
+    "b": "vortex-based-mathematics",
+    "relation": "conceptual overlap",
+    "note": "Both explore numerical patterns; a shared digit pattern is not a physical theory.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c9",
+    "a": "breathwork",
+    "b": "emotional-regulation",
+    "relation": "practice connection",
+    "note": "Breathing practices may affect arousal; outcome claims need independent evidence.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c10",
+    "a": "chakras",
+    "b": "meditation",
+    "relation": "tradition and practice",
+    "note": "Some contemplative traditions use chakra frameworks in meditation.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c11",
+    "a": "ancient-temple-acoustics",
+    "b": "acoustic-resonance",
+    "relation": "research question",
+    "note": "Archaeological acoustic claims need site-specific data and measurement controls.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c12",
+    "a": "group-consciousness-practices",
+    "b": "community-healing",
+    "relation": "social practice",
+    "note": "Shared activity can support social connection without implying a physical group field.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c13",
+    "a": "sound-healing",
+    "b": "acoustic-resonance",
+    "relation": "evidence boundary",
+    "note": "Sound has measurable acoustic behavior, not automatic proof of clinical benefit.",
+    "reviewStatus": "provisional"
+  },
+  {
+    "id": "c14",
+    "a": "water-memory-concepts",
+    "b": "structured-water-concepts",
+    "relation": "claim comparison",
+    "note": "Different water-property claims require distinct definitions and controlled tests.",
+    "reviewStatus": "provisional"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "AquaCymatics369",
+    "kind": "Acoustics and visual patterns",
+    "description": "Audio-reactive WebGL explorer with measured/simulated/artistic distinctions.",
+    "url": "https://michaelwave369.github.io/AquaCymatics369/",
+    "repo": "https://github.com/MichaelWave369/AquaCymatics369"
+  },
+  {
+    "name": "Element Spiral Atlas",
+    "kind": "Comparative geometry",
+    "description": "Standard periodic table compared with experimental spiral representations.",
+    "url": "https://michaelwave369.github.io/phi369-element-spiral-atlas/",
+    "repo": "https://github.com/MichaelWave369/phi369-element-spiral-atlas"
+  },
+  {
+    "name": "PatternAtlas",
+    "kind": "Source and hypothesis investigation",
+    "description": "Evidence graphs, competing hypotheses, and source-trace methods.",
+    "url": "https://michaelwave369.github.io/PatternAtlas/",
+    "repo": "https://github.com/MichaelWave369/PatternAtlas"
+  },
+  {
+    "name": "RegenerationAtlas",
+    "kind": "Biology research methods",
+    "description": "Source-scoped regeneration research with clear clinical limitations.",
+    "url": "https://github.com/MichaelWave369/RegenerationAtlas",
+    "repo": "https://github.com/MichaelWave369/RegenerationAtlas"
+  }
+]

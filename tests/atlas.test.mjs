@@ -1,0 +1,8 @@
+import test from "node:test";import assert from "node:assert/strict";import{readFileSync}from"node:fs";
+const read=p=>JSON.parse(readFileSync(new URL(p,import.meta.url),"utf8"));
+const{realms,topics}=read("../site/data/topics.json"),connections=read("../site/data/connections.json"),labs=read("../site/data/labs.json");
+test("179 founding topics, one unique ID and title each",()=>{assert.equal(topics.length,179);assert.equal(new Set(topics.map(t=>t.id)).size,179);assert.equal(new Set(topics.map(t=>t.title)).size,179);});
+test("nine populated realms and honest review flags",()=>{assert.equal(realms.length,9);const ids=new Set(realms.map(r=>r.id));assert.equal(ids.size,9);for(const t of topics){assert.ok(ids.has(t.realm));assert.equal(t.reviewStatus,"not-reviewed");assert.ok(t.description.length>35);}for(const r of realms)assert.ok(topics.some(t=>t.realm===r.id));});
+test("relationships reference existing topics and are provisional",()=>{const ids=new Set(topics.map(t=>t.id));assert.equal(connections.length,14);for(const c of connections){assert.ok(ids.has(c.a));assert.ok(ids.has(c.b));assert.notEqual(c.a,c.b);assert.equal(c.reviewStatus,"provisional");assert.ok(c.note.length>25);}});
+test("laboratory links use HTTPS",()=>{assert.equal(labs.length,4);for(const l of labs){assert.match(l.url,/^https:\/\//);assert.match(l.repo,/^https:\/\/github.com\//);}});
+test("site contains accessibility and research framing",()=>{const h=readFileSync(new URL("../site/index.html",import.meta.url),"utf8");assert.match(h,/Skip to atlas explorer/);assert.match(h,/aria-live="polite"/);assert.match(h,/Listing a claim is not endorsing it/);assert.doesNotMatch(h,/google-analytics|gtag\(/);});
