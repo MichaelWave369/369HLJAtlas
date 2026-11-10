@@ -8,7 +8,7 @@ const fail=reason=>{report.dataset.result="failed";report.textContent="FAIL: "+r
 const pass=()=>{report.dataset.result="passed";report.textContent="PASS: Review workflow, source audit, research model and Institute navigation";};
 const ensure=(condition,message)=>{if(!condition)throw Error(message);};
 let finished=false,tries=0;
-const check=setInterval(()=>{
+const check=setInterval(async()=>{
  if(finished)return;
  if(++tries>180){finished=true;clearInterval(check);fail("Timeout waiting for all site modules");return;}
  let d;
@@ -19,6 +19,7 @@ const check=setInterval(()=>{
    !d.querySelector(".institute-map-node")||
    !d.querySelector("#realms button"))return;
  try{
+  finished=true;clearInterval(check);
 
   const researchNav=d.querySelector('.site-nav details[data-group="research"]');
   ensure(!!researchNav,"Research dropdown missing");
@@ -79,6 +80,31 @@ const check=setInterval(()=>{
   d.getElementById("living-alternative").value="This combinatorial theorem does not establish any physical force.";
   d.getElementById("living-capture").click();
   ensure(d.querySelectorAll("#living-records .living-record").length===1,"Living Lab capture did not persist in session");
+
+  // A local JSON upload must NOT become an accepted result without explicit consent.
+  ensure(d.getElementById("packet-workbench")?.dataset.ready==="true","Research Workbench did not initialize");
+  const reviewExample={schema:"369.hlj.review-packet.v1",createdAt:"2026-11-09T23:00:00Z",
+    publicationState:"UNPUBLISHED_LOCAL_SUGGESTIONS",
+    proposals:[{schema:"369.hlj.review-proposal.v1",claimId:"claim-02",topicId:"quartz-crystal-resonance",
+      sourceId:"nist-quartz",assessment:"needs-more-evidence",createdAt:"2026-11-09T23:00:00Z",
+      reviewNotes:"I examined a technical explanation of quartz oscillators and their properties.",
+      limitations:"This has no evidence for any medical healing proposition.",
+      correctionRequest:null,inspectionAcknowledged:true,status:"LOCAL_PROPOSAL_NOT_PUBLISHED",
+      truthBoundary:"Self-reported source inspection, not authentication, peer review, scientific verification or an update to the public Atlas."}]};
+  const chooser=d.getElementById("workbench-file");
+  const file=new d.defaultView.File([JSON.stringify(reviewExample)],"hlj-review.json",{type:"application/json"});
+  const transfer=new d.defaultView.DataTransfer();
+  transfer.items.add(file);chooser.files=transfer.files;
+  chooser.dispatchEvent(new d.defaultView.Event("change",{bubbles:true}));
+  await new Promise(resolve=>setTimeout(resolve,420));
+  ensure(!d.getElementById("workbench-preview").hidden,"Recognized review packet did not preview");
+  ensure(d.getElementById("workbench-approve").disabled,"Approval must require explicit consent");
+  d.getElementById("workbench-confirm").click();
+  ensure(!d.getElementById("workbench-approve").disabled,"Consent did not unlock approval");
+  d.getElementById("workbench-approve").click();
+  ensure(d.getElementById("workbench-count").textContent==="1 / 8","Reviewed packet was not added");
+  d.getElementById("workbench-clear").click();
+  ensure(d.getElementById("workbench-count").textContent==="0 / 8","Clear failed to empty Workbench");
   d.getElementById("institute-next").click();
   ensure(d.getElementById("institute-progress").textContent==="Stop 2 of 6","Visitor guide next-stop navigation failed");
   d.querySelector("#realms button").click();
