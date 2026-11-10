@@ -209,7 +209,7 @@ function constellation(input,ctx){
  for(const note of notes){
   const topic=topicMap.get(note.topicId);
   rows.push({heading:"Personal note · "+topic.title,lines:[
-    fieldsRow("Topic",topic.title),fieldsRow("Author-supplied text",note.text),
+    fieldsRow("Topic",topic.title),{name:"Author-supplied text",value:note.text},
     fieldsRow("Evidence status","Personal hypothesis or observation, not verified evidence")
   ]});
  }

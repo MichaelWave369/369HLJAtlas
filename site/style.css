@@ -144,3 +144,12 @@
 .workbench-actions #workbench-clear{background:transparent;color:#dbe6dd;border:1px solid #507b6e}
 @media(max-width:880px){.packet-workbench-columns{grid-template-columns:1fr}}
 @media(max-width:560px){.packet-workbench{padding:15px}.packet-workbench-heading{flex-direction:column;gap:10px}.packet-workbench-tally{border:0;border-top:1px solid #43685d;padding:10px 0 0;display:flex;gap:8px;align-items:center}.packet-workbench-import,.packet-workbench-archive{padding:14px}}
+
+/* HLJ-012: grounded topic links retain in-memory research notes on navigation */
+.cosmos-workbench-link{display:inline-flex;align-items:center;color:var(--mint);font-size:11px;text-decoration:underline;text-underline-offset:3px}
+.workbench-topic-links{display:flex;flex-wrap:wrap;align-items:center;gap:6px;border-top:1px solid #365c53;margin-top:12px;padding-top:11px}
+.workbench-topic-label{font-size:11px;color:var(--muted);margin-right:4px}
+.workbench-topic-links a{display:inline-block;border:1px solid #50796d;border-radius:19px;padding:6px 10px;color:var(--mint);font-size:11px;text-decoration:none}
+.workbench-topic-links a:hover,.workbench-topic-links a:focus-visible{background:#245247;outline-color:var(--gold)}
+.workbench-archived-item{flex-wrap:wrap}
+.workbench-archived-item .workbench-topic-links{flex:0 0 100%;width:100%}

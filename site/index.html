@@ -35,7 +35,7 @@
         <p>Jot down observations, alternatives and falsifiers for the selected topic. Notes stay in this tab's memory until you export them; nothing is automatically saved or uploaded.</p>
         <label for="cosmos-note">Working hypothesis or question</label>
         <textarea id="cosmos-note" rows="5" maxlength="8000" placeholder="What would change my mind? What evidence would I need?"></textarea>
-        <div class="cosmos-note-actions"><button id="cosmos-export" type="button">Export research packet (JSON)</button><span id="cosmos-note-status" role="status" aria-live="polite"></span></div>
+        <div class="cosmos-note-actions"><button id="cosmos-export" type="button">Export research packet (JSON)</button><a class="cosmos-workbench-link" href="#packet-workbench">Import into Research Workbench ↓</a><span id="cosmos-note-status" role="status" aria-live="polite"></span></div>
       </section>
     </div>
   </div>
@@ -92,14 +92,14 @@
    <div>
     <p class="eyebrow">HLJ-011 / LOCAL RESEARCH WORKBENCH</p>
     <h3 id="packet-workbench-heading">One desk for all your research packets.</h3>
-    <p>Bring exports from the Living Lab, Verification Desk, Evidence Trail and Lab Bridge into one local collection. Each packet is checked against its known format and the Atlas's current public registries. No account, server upload, automatic evidence verdict or new top-bar item.</p>
+    <p>Bring exports from the Constellation, Living Lab, Verification Desk, Evidence Trail and Lab Bridge into one local collection. Each packet is checked against its known format and the Atlas's current public registries. No account, server upload, automatic evidence verdict or new top-bar item.</p>
    </div>
    <div class="packet-workbench-tally" aria-live="polite"><strong id="workbench-count">0 / 8</strong><span>reviewed packets</span><strong id="workbench-record-count">0</strong><span>records across packets</span></div>
   </div>
   <div class="packet-workbench-columns">
    <div class="packet-workbench-import">
     <h4>1. Inspect a local export</h4>
-    <p>Choose a JSON file produced by an Atlas module. This also accepts a previously exported Research Workbench collection. Files must be 256 KiB or less; unsupported formats are rejected.</p>
+    <p>Choose a JSON file produced by one of the five supported Atlas modules. This also accepts a previously exported Research Workbench collection. Files must be 256 KiB or less; unsupported formats are rejected. Export a Constellation research packet first, then select the downloaded file here.</p>
     <label for="workbench-file">Choose JSON packet</label>
     <input id="workbench-file" type="file" accept=".json,application/json">
     <p id="workbench-message" role="status" aria-live="polite">No file selected. Files are read on your device only.</p>
