@@ -26,3 +26,6 @@ Verify primary-source links, metadata and retractions; build a documented editor
 
 ## Acceptance
 Tests green, 179 unique topic IDs, every topic accessible by search, browse and keyboard, external links safe, clear review status and no hidden tracking. GitHub Actions passing is not a substitute for manual browser testing.
+
+## HLJ-008 — Citation metadata fixes and interaction acceptance (proposed)
+Correct five source titles, preserve an append-only bibliography correction log, inspect indexed content on sixteen reference pages without claiming live URL status or retraction review, and add Chrome interaction smoke for review and experiment workflows. Human source-to-claim audits, screen reader and Quest acceptance, and retraction checks are still pending.
