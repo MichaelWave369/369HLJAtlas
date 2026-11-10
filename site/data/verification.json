@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-11-09",
+  "state": "OPEN_REVIEW_QUEUE_NOT_AUTHORITY",
+  "summary": "Ten preliminary, narrowly stated claim questions. A source ID means a catalog entry exists, not that its URL has been freshly checked or the underlying paper independently verified.",
+  "sourceRoleDefinitions": {
+    "reports": "A linked source is described as reporting the phenomenon or result; its original text still requires human checking.",
+    "background": "Contextual reference. Not direct evidence for this exact statement.",
+    "qualifies": "Relevant limitation or differing intervention/outcome; not necessarily a direct contradiction.",
+    "distinct-protocol": "Different experimental protocol. Do not present as direct replication."
+  },
+  "claims": [
+    {
+      "id": "claim-01",
+      "topicId": "cymatics",
+      "statement": "Vibrated plates can form nodal patterns that change with the excitation and boundary conditions.",
+      "category": "physical phenomenon",
+      "scopeLimit": "The precise mechanism is vibration and standing-wave behavior; this does not entail a biological or therapeutic effect.",
+      "reviewQuestion": "Would a source show repeatable nodal arrangements with controlled material and drive settings?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "ucsc-chladni",
+          "role": "reports",
+          "note": "University demonstration illustrating Chladni figures."
+        },
+        {
+          "sourceId": "smithsonian-chladni",
+          "role": "background",
+          "note": "Museum context for historical Chladni plates."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-02",
+      "topicId": "quartz-crystal-resonance",
+      "statement": "Engineered quartz resonators exploit piezoelectric properties to help maintain stable electronic oscillator frequencies.",
+      "category": "engineering mechanism",
+      "scopeLimit": "Specific oscillator performance depends on the crystal cut and circuit; the claim does not support quartz-based healing.",
+      "reviewQuestion": "Does the technical reference specify a resonator mechanism and engineering limits?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "nist-quartz",
+          "role": "reports",
+          "note": "Technical reference on quartz resonators."
+        },
+        {
+          "sourceId": "nist-time",
+          "role": "background",
+          "note": "Historical frequency-standard context, not a therapeutic study."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-03",
+      "topicId": "schumann-resonance-earths-heartbeat",
+      "statement": "The Earth-ionosphere cavity supports measurable electromagnetic resonance modes excited by lightning.",
+      "category": "physical phenomenon",
+      "scopeLimit": "Atmospheric resonance is not evidence of synchronizing human consciousness or health benefits.",
+      "reviewQuestion": "Does the technical source describe the measured field, frequencies and formation mechanism?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "nasa-schumann",
+          "role": "reports",
+          "note": "Technical report record on Schumann resonance observations."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-04",
+      "topicId": "sacred-geometry",
+      "statement": "There are exactly five convex regular Platonic solids, a mathematical classification.",
+      "category": "mathematics",
+      "scopeLimit": "This classification does not prove claims about unseen energy, the origins of every symbol, or therapeutic outcomes.",
+      "reviewQuestion": "Can the five solids be defined and enumerated under the same mathematical criteria?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "mathworld-solids",
+          "role": "reports",
+          "note": "Mathematical reference on Platonic solid classification."
+        },
+        {
+          "sourceId": "met-patterns",
+          "role": "background",
+          "note": "Separate cultural account of geometric design; not proof of this classification."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-05",
+      "topicId": "dna-activation",
+      "statement": "Gene expression is a measurable cellular process and is distinct from claims of supernatural 'DNA activation'.",
+      "category": "biology terminology",
+      "scopeLimit": "The genome references define biology terms; they do not directly investigate every claimed spiritual practice.",
+      "reviewQuestion": "Does the source distinguish measured gene regulation from a nonoperational metaphor?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "nhgri-expression",
+          "role": "reports",
+          "note": "Genomics glossary identifying measurable gene expression."
+        },
+        {
+          "sourceId": "nhgri-noncoding",
+          "role": "background",
+          "note": "Genomics context about noncoding DNA and regulatory roles."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-06",
+      "topicId": "breathwork",
+      "statement": "Reported effects of breathing interventions on stress and anxiety vary by intervention and study design.",
+      "category": "clinical study interpretation",
+      "scopeLimit": "A positive systematic review and a control trial of one pacing intervention do not yield one universal efficacy verdict.",
+      "reviewQuestion": "What precise intervention, comparator, outcome and study limitations are described?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "breathing-review",
+          "role": "reports",
+          "note": "Review of breathing intervention outcomes; needs direct methods verification."
+        },
+        {
+          "sourceId": "breathing-control",
+          "role": "qualifies",
+          "note": "Controlled study of a specific coherent-breathing protocol; comparator and outcome differ."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-07",
+      "topicId": "meditation",
+      "statement": "Some meditation interventions have studied psychological outcomes, with differing evidence quality and potential adverse experiences.",
+      "category": "clinical evidence overview",
+      "scopeLimit": "This scoped overview does not justify replacing clinical care or assuming every meditation technique works.",
+      "reviewQuestion": "Which outcomes and study populations appear in the evidence overview?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "meditation-nccih",
+          "role": "reports",
+          "note": "NIH overview of effectiveness, limitations and safety."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-08",
+      "topicId": "water-memory-concepts",
+      "statement": "The ordinary hydrogen-bond network in liquid water undergoes rapid molecular rearrangement.",
+      "category": "physical chemistry",
+      "scopeLimit": "A finding about molecular timescales does not alone settle every differently defined water-memory claim or establish homeopathic efficacy.",
+      "reviewQuestion": "Do the studies measure hydrogen-bond dynamics and distinguish these from a proposed persistent memory signal?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "water-cowan",
+          "role": "reports",
+          "note": "Experimental spectroscopy of liquid-water hydrogen-bond dynamics."
+        },
+        {
+          "sourceId": "water-review",
+          "role": "background",
+          "note": "Broad review of water dynamics and biomolecular hydration."
+        },
+        {
+          "sourceId": "homeopathy-nccih",
+          "role": "qualifies",
+          "note": "Separate clinical-evidence context for remedies, not a direct water-dynamics measurement."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-09",
+      "topicId": "telepathy",
+      "statement": "A published Ganzfeld meta-analysis reports a positive aggregate result within its selected studies.",
+      "category": "contested study report",
+      "scopeLimit": "A reported meta-analytic effect does not establish an accepted mechanism. The other linked study examines a different ESP paradigm, not a direct replication.",
+      "reviewQuestion": "Do the included studies, effect size, selection criteria and replication limits support the exact reported claim?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "psi-meta",
+          "role": "reports",
+          "note": "Meta-analysis with its own selected Ganzfeld studies."
+        },
+        {
+          "sourceId": "psi-replication",
+          "role": "distinct-protocol",
+          "note": "Transparent Psi Project tests a different ESP paradigm; not a direct duplicate of Ganzfeld."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    },
+    {
+      "id": "claim-10",
+      "topicId": "ancient-temple-acoustics",
+      "statement": "Archaeological sound fields can be investigated with acoustic measurement and scale modelling.",
+      "category": "archaeoacoustics",
+      "scopeLimit": "Measured reverberation or simulation does not by itself establish the intention of builders or special healing technology.",
+      "reviewQuestion": "What were the acoustic assumptions, reconstructed geometry and measurement controls?",
+      "reviewStatus": "awaiting-primary-source-check",
+      "provenanceState": "catalog-references-only",
+      "sourceLinks": [
+        {
+          "sourceId": "stonehenge",
+          "role": "reports",
+          "note": "Scale modelling of Stonehenge acoustic characteristics."
+        },
+        {
+          "sourceId": "malta",
+          "role": "background",
+          "note": "Site-specific archaeological acoustic investigation in Malta."
+        }
+      ],
+      "editorialNotes": "Restated from the HLJ-002 editorial starter; source links and wording need independent review before publication as a reviewed claim."
+    }
+  ]
+}

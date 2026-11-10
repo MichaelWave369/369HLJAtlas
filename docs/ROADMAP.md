@@ -18,8 +18,11 @@ Six-stop accessible conceptual visitor walk, source-described PhiOS Web/Mobile/X
 ## HLJ-006 — Living Research Laboratory (educational model preview)
 Three interactive guided protocols: 1D string harmonics, exact Euler counts for five Platonic solids, and a deterministic 40-toss fair-coin null model. Users must state a prediction, inspect model outputs and limitations, and manually capture an observation and alternative explanation. Local session notebook exports portable JSON; no measured science or paranormal claims. Complete hands-on browser acceptance before describing the preview as production-qualified.
 
-## Next proposal: HLJ-007 — Curated review and browser qualification
-Build an editorial source-to-claim review queue, correct stale references, and add real-browser smoke gates before adding more experiments or expanding source authority.
+## HLJ-007 — Curated research verification and browser gate (proposed)
+Ten narrowly restated claims linked to the existing 19 source references; clearly typed roles, no automatic truth classifications, an initially empty public correction ledger, local review proposal capture/export, and a required real-Chrome startup smoke in CI. Link status, retractions and scientific source correspondence remain **not independently audited**. Manual author and source review plus real interaction testing remain necessary.
+
+## HLJ-008 — Source-quality audits and reviewed corrections
+Verify primary-source links, metadata and retractions; build a documented editorial PR workflow with independently confirmed correction history; add browser interaction coverage and consider human review roles without instituting automated epistemic authority.
 
 ## Acceptance
 Tests green, 179 unique topic IDs, every topic accessible by search, browse and keyboard, external links safe, clear review status and no hidden tracking. GitHub Actions passing is not a substitute for manual browser testing.
