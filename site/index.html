@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09161d"><meta name="description" content="A research atlas bridging geometry, resonance, consciousness and community through Hope, Love and Joy."><title>369 HLJ Atlas | Hope · Love · Joy</title><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script><script src="./constellation.js" defer></script><script src="./lab-bridge.js" type="module"></script><script src="./institute.js" type="module"></script><script src="./living-lab.js" type="module"></script><script src="./verification.js" type="module"></script><script src="./source-audit.js" type="module"></script><script src="./nav.js" defer></script><script src="./evidence-trail.js" type="module"></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09161d"><meta name="description" content="A research atlas bridging geometry, resonance, consciousness and community through Hope, Love and Joy."><title>369 HLJ Atlas | Hope · Love · Joy</title><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script><script src="./constellation.js" defer></script><script src="./lab-bridge.js" type="module"></script><script src="./institute.js" type="module"></script><script src="./living-lab.js" type="module"></script><script src="./verification.js" type="module"></script><script src="./source-audit.js" type="module"></script><script src="./nav.js" defer></script><script src="./evidence-trail.js" type="module"></script><script src="./research-workbench.js" type="module"></script></head>
 <body><a class="skip" href="#explore">Skip to atlas explorer</a><div class="aurora" aria-hidden="true"></div>
 <header class="wrap top"><a class="brand" href="./" aria-label="369 HLJ Atlas home"><span class="phi" aria-hidden="true">Φ</span><span><strong>369 HLJ ATLAS</strong><small>HOPE / LOVE / JOY</small></span></a><button id="site-menu-toggle" class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false"><span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Menu</span></button><nav class="site-nav" id="site-nav" aria-label="Main navigation" data-open="false"><a class="nav-primary" href="#explore">Explore</a><details class="nav-group" data-group="discover"><summary>Discover <span class="nav-caret" aria-hidden="true"></span></summary><div class="nav-panel"><a href="#constellation"><strong>Constellation</strong><small>Visual topic map</small></a><a href="#connections"><strong>Crossroads</strong><small>Provisional relationships</small></a><a href="#institute"><strong>Shasta Institute</strong><small>Learning journey</small></a></div></details><details class="nav-group" data-group="research"><summary>Research <span class="nav-caret" aria-hidden="true"></span></summary><div class="nav-panel"><a href="#research"><strong>Research Library</strong><small>Source-backed dossiers</small></a><a href="#verification"><strong>Verify Claims</strong><small>Evidence review desk</small></a><a href="#source-audit"><strong>Source Audit</strong><small>Bibliography correction log</small></a><a href="#living-lab"><strong>Living Lab</strong><small>Guided educational experiments</small></a></div></details><details class="nav-group" data-group="labs"><summary>Labs <span class="nav-caret" aria-hidden="true"></span></summary><div class="nav-panel"><a href="#lab-bridge"><strong>Lab Bridge</strong><small>Inspect laboratory exports</small></a><a href="#labs"><strong>Laboratories</strong><small>Visit existing projects</small></a></div></details><a class="nav-primary" href="#promise">Our Promise</a><a class="mobile-source-link" href="https://github.com/MichaelWave369/369HLJAtlas" target="_blank" rel="noopener noreferrer">GitHub source ↗</a></nav><a class="source" href="https://github.com/MichaelWave369/369HLJAtlas" target="_blank" rel="noopener noreferrer">Source ↗</a></header>
 <main><section class="wrap hero"><div class="herotext"><p class="eyebrow">✦ A BRIDGE FOR CURIOUS MINDS</p><h1>We can seek the truth <em>together.</em></h1><p class="lead">An open exploration of ancient wisdom, measurable science, human consciousness and the joy of discovery. No agreement required. Evidence welcome.</p><div class="actions"><a class="button primary" href="#explore">Explore the Atlas ↗</a><a class="button outline" href="#promise">Our research promise</a></div><div class="stats"><span><b id="total">179</b> FOUNDING TOPICS</span><span><b>09</b> KNOWLEDGE REALMS</span><span><b>03</b> RESEARCH LENSES</span></div></div><div class="geometry" role="img" aria-label="Decorative interlocking circles symbolizing connection"><svg viewBox="0 0 500 500" aria-hidden="true"><circle cx="250" cy="250" r="235" fill="none" stroke="#527e79" stroke-width="1"/><g fill="none" stroke="#8bdacb" stroke-opacity=".7" stroke-width="1.4"><circle cx="250" cy="250" r="145"/><circle cx="250" cy="250" r="84"/><circle cx="250" cy="166" r="84"/><circle cx="250" cy="334" r="84"/><circle cx="323" cy="208" r="84"/><circle cx="177" cy="208" r="84"/><circle cx="323" cy="292" r="84"/><circle cx="177" cy="292" r="84"/><path d="M250 105 375 322 125 322Z M250 395 125 178 375 178Z"/></g><circle cx="250" cy="250" r="5" fill="#efc891"/></svg><p>DIFFERENT PATHS · SHARED CURIOSITY</p></div></section>
@@ -85,6 +85,46 @@
   </div>
   <div id="living-records" class="living-records" aria-live="polite"><p>No learning records captured.</p></div>
   <div class="living-notebook-actions"><button type="button" id="living-export" disabled>Export research notebook (JSON)</button><button type="button" id="living-clear" disabled>Clear journal</button><span id="living-export-status" role="status" aria-live="polite"></span></div>
+ </div>
+
+ <div class="packet-workbench" id="packet-workbench" data-ready="false" aria-labelledby="packet-workbench-heading">
+  <div class="packet-workbench-heading">
+   <div>
+    <p class="eyebrow">HLJ-011 / LOCAL RESEARCH WORKBENCH</p>
+    <h3 id="packet-workbench-heading">One desk for all your research packets.</h3>
+    <p>Bring exports from the Living Lab, Verification Desk, Evidence Trail and Lab Bridge into one local collection. Each packet is checked against its known format and the Atlas's current public registries. No account, server upload, automatic evidence verdict or new top-bar item.</p>
+   </div>
+   <div class="packet-workbench-tally" aria-live="polite"><strong id="workbench-count">0 / 8</strong><span>reviewed packets</span><strong id="workbench-record-count">0</strong><span>records across packets</span></div>
+  </div>
+  <div class="packet-workbench-columns">
+   <div class="packet-workbench-import">
+    <h4>1. Inspect a local export</h4>
+    <p>Choose a JSON file produced by an Atlas module. This also accepts a previously exported Research Workbench collection. Files must be 256 KiB or less; unsupported formats are rejected.</p>
+    <label for="workbench-file">Choose JSON packet</label>
+    <input id="workbench-file" type="file" accept=".json,application/json">
+    <p id="workbench-message" role="status" aria-live="polite">No file selected. Files are read on your device only.</p>
+    <div id="workbench-preview" hidden>
+     <p class="eyebrow">REVIEW-BEFORE-APPLY</p>
+     <h5 id="workbench-preview-title">Recognized packet</h5>
+     <p id="workbench-preview-summary"></p>
+     <div id="workbench-preview-entries" class="workbench-preview-entries"></div>
+     <p class="workbench-warning">Notes and review observations may be personal. Expand each item to inspect them before approving. All imported records remain unverified and unpublished.</p>
+     <label class="workbench-confirm"><input type="checkbox" id="workbench-confirm"> I reviewed the displayed contents and understand they remain educational notes, proposals, or source-declared snapshots, not verified scientific evidence.</label>
+     <button id="workbench-approve" type="button" disabled>Add reviewed packet to session</button>
+    </div>
+   </div>
+   <div class="packet-workbench-archive">
+    <h4>2. Curate a session collection</h4>
+    <p>Up to eight reviewed packets stay in memory until you export them or close this tab. Remove individual packets, clear everything, or create one portable JSON collection you can later re-import here.</p>
+    <div id="workbench-archive" aria-live="polite"><p>No reviewed packets in this session.</p></div>
+    <div class="workbench-actions">
+     <button id="workbench-export" type="button" disabled>Export consolidated JSON</button>
+     <button id="workbench-clear" type="button" disabled>Clear this collection</button>
+    </div>
+    <p id="workbench-export-status" role="status" aria-live="polite"></p>
+    <p class="workbench-warning">The exported file contains the notes and source-declared details you explicitly approved. Review it before sharing it with anyone.</p>
+   </div>
+  </div>
  </div>
 </section>
 

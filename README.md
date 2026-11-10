@@ -83,3 +83,7 @@ Eleven top-bar destinations are grouped under Explore, Discover, Research, Labs 
 ## HLJ-010: The Evidence Trail
 
 The existing Verify Claims desk now shows a claim-by-claim documentary chain: source roles, bounded page inspections, missing retraction/claim checks, and explicit bibliography or claim-level correction history. Users can share `?claim=<id>#evidence-trail`, jump to a dossier/source audit, or export public citation metadata locally. It does **not** verify scientific conclusions, create new connections, or require another top-bar link. See `docs/EVIDENCE_TRAIL_HLJ010.md`.
+
+## HLJ-011: Local Research Workbench
+
+One research desk now accepts the **four existing, bounded export formats** from Living Lab notebooks, Review proposals, Evidence Trail and Lab Bridge. Import files are checked locally, with model outputs recomputed against their parameters and source/claim IDs reconciled against the existing registries. Visitors explicitly inspect and consent before adding up to eight sanitized packet entries, and can clear or export/re-import a consolidated JSON collection. Nothing is automatically saved, uploaded, verified or published, and personal notes can remain in the downloaded packet. See `docs/RESEARCH_WORKBENCH_HLJ011.md` for precise formats and limitations.
