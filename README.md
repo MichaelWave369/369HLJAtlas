@@ -75,3 +75,7 @@ Ten narrowly restated claims use explicit relationships to the existing 19 sourc
 ## HLJ-008 — Source bibliography audit
 
 First bounded index/publisher-content review: 16 of 19 source records had limited page metadata reviewed, three remain pending. **Five misleading or shortened article/page titles were corrected and logged** in an append-only source-metadata correction file. The new Sources panel shows each status, original link, what was inspected, and what remains unverified. All 19 sources explicitly retain **retraction registry: not checked** and **scientific evidence: not independently verified**. A second browser acceptance harness clicks real interface controls, exercises claim review and Living Lab capture, and checks source filters. Neither source counts nor passing smoke tests confer scientific authority. See `docs/SOURCE_AUDIT_HLJ008.md`.
+
+## HLJ-009A: Compact header navigation
+
+Eleven top-bar destinations are grouped under Explore, Discover, Research, Labs and Our Promise. The responsive menu preserves every destination, uses keyboard-operable native dropdowns and a mobile Menu toggle, and retains GitHub Source. Automated Chrome tests exercise desktop and narrow-mobile navigation. See docs/NAVIGATION_HLJ009.md.

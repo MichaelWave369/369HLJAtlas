@@ -19,6 +19,31 @@ const check=setInterval(()=>{
    !d.querySelector(".institute-map-node")||
    !d.querySelector("#realms button"))return;
  try{
+
+  const researchNav=d.querySelector('.site-nav details[data-group="research"]');
+  ensure(!!researchNav,"Research dropdown missing");
+  researchNav.querySelector("summary").click();
+  ensure(researchNav.open,"Desktop Research dropdown did not open");
+  ensure(!!researchNav.querySelector('a[href="#verification"]'),"Verification destination missing");
+  researchNav.querySelector('a[href="#verification"]').click();
+  ensure(!researchNav.open,"Desktop navigation did not close after link");
+  frame.style.width="390px";
+  ensure(d.defaultView.matchMedia("(max-width: 960px)").matches,"Mobile CSS breakpoint missing");
+  const navToggle=d.getElementById("site-menu-toggle"),mobileNav=d.getElementById("site-nav");
+  ensure(d.defaultView.getComputedStyle(navToggle).display!=="none","Mobile menu button hidden");
+  ensure(d.defaultView.getComputedStyle(mobileNav).display==="none","Mobile menu initially expanded");
+  navToggle.click();
+  ensure(navToggle.getAttribute("aria-expanded")==="true","Mobile menu did not expand");
+  ensure(d.defaultView.getComputedStyle(mobileNav).display!=="none","Expanded mobile nav not visible");
+  const labs=d.querySelector('.site-nav details[data-group="labs"]');
+  labs.querySelector("summary").click();
+  ensure(labs.open,"Nested Labs menu did not expand");
+  d.dispatchEvent(new d.defaultView.KeyboardEvent("keydown",{key:"Escape",bubbles:true}));
+  ensure(navToggle.getAttribute("aria-expanded")==="false"&&!labs.open,"Escape did not close mobile menu");
+  navToggle.click();
+  d.querySelector('.site-nav a[href="#explore"]').click();
+  ensure(navToggle.getAttribute("aria-expanded")==="false","Anchor click did not close mobile menu");
+  frame.style.width="1080px";
   const q=d.querySelectorAll(".verification-card");
   ensure(q.length===10,"Claim queue did not load all ten entries");
   q[1].click();
