@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Atlas browser interaction acceptance</title></head>
+<body><h1>HLJ interaction acceptance (isolated local runner)</h1><p id="interaction-report" data-result="pending">Awaiting site boot</p>
+<iframe id="site-frame" src="/" title="Atlas test frame" width="1080" height="900"></iframe>
+<script>
+"use strict";
+const report=document.getElementById("interaction-report"),frame=document.getElementById("site-frame");
+const fail=reason=>{report.dataset.result="failed";report.textContent="FAIL: "+reason;};
+const pass=()=>{report.dataset.result="passed";report.textContent="PASS: Review workflow, source audit, research model and Institute navigation";};
+const ensure=(condition,message)=>{if(!condition)throw Error(message);};
+let finished=false,tries=0;
+const check=setInterval(()=>{
+ if(finished)return;
+ if(++tries>180){finished=true;clearInterval(check);fail("Timeout waiting for all site modules");return;}
+ let d;
+ try{d=frame.contentDocument;}catch{return;}
+ if(!d||d.getElementById("verification-root")?.dataset.ready!=="true"||
+   d.getElementById("source-audit-root")?.dataset.ready!=="true"||
+   !d.querySelector("#living-protocols button[data-protocol='platonic-solids']")||
+   !d.querySelector(".institute-map-node")||
+   !d.querySelector("#realms button"))return;
+ try{
+  const q=d.querySelectorAll(".verification-card");
+  ensure(q.length===10,"Claim queue did not load all ten entries");
+  q[1].click();
+  ensure(d.getElementById("verify-title").textContent.length>6,"Claim selection failed");
+  const notes=d.getElementById("verify-notes"),limits=d.getElementById("verify-limitations");
+  notes.value="Source methods need a primary-text cross-check and independent replication review.";
+  limits.value="A bibliographic match is not enough to verify the experimental result.";
+  d.getElementById("verify-attestation").checked=true;
+  d.getElementById("verify-capture").click();
+  ensure(d.getElementById("verify-local").textContent==="1","Reviewer capture did not add proposal");
+  d.getElementById("verify-clear").click();
+  ensure(d.getElementById("verify-local").textContent==="0","Reviewer clear did not remove proposal");
+  const filter=d.getElementById("source-audit-filter");
+  filter.value="not-checked";filter.dispatchEvent(new Event("change",{bubbles:true}));
+  const list=d.querySelectorAll("#source-audit-cards button");
+  ensure(list.length===3,"Source audit unreviewed filter did not return three records");
+  list[0].click();
+  ensure(d.getElementById("source-audit-observation").textContent.includes("still require"),"Source detail did not update");
+  d.querySelector("#living-protocols button[data-protocol='platonic-solids']").click();
+  d.getElementById("living-prediction").value="Euler's invariant will equal two for this selected solid.";
+  d.getElementById("living-run").click();
+  ensure(d.getElementById("living-interpretation").hidden===false,"Platonic model did not execute");
+  ensure(d.getElementById("living-outcome-body").textContent.includes("vertices"),"Model results not rendered");
+  d.getElementById("living-observation").value="The resulting Euler count equals two.";
+  d.getElementById("living-alternative").value="This combinatorial theorem does not establish any physical force.";
+  d.getElementById("living-capture").click();
+  ensure(d.querySelectorAll("#living-records .living-record").length===1,"Living Lab capture did not persist in session");
+  d.getElementById("institute-next").click();
+  ensure(d.getElementById("institute-progress").textContent==="Stop 2 of 6","Visitor guide next-stop navigation failed");
+  d.querySelector("#realms button").click();
+  ensure(!d.getElementById("count").textContent.startsWith("179 /"),"Realm filter did not narrow browse count");
+  finished=true;clearInterval(check);pass();
+ }catch(e){finished=true;clearInterval(check);fail(e.message||String(e));}
+},100);
+</script></body></html>
