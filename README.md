@@ -87,3 +87,7 @@ The existing Verify Claims desk now shows a claim-by-claim documentary chain: so
 ## HLJ-011: Local Research Workbench
 
 One research desk now accepts the **four existing, bounded export formats** from Living Lab notebooks, Review proposals, Evidence Trail and Lab Bridge. Import files are checked locally, with model outputs recomputed against their parameters and source/claim IDs reconciled against the existing registries. Visitors explicitly inspect and consent before adding up to eight sanitized packet entries, and can clear or export/re-import a consolidated JSON collection. Nothing is automatically saved, uploaded, verified or published, and personal notes can remain in the downloaded packet. See `docs/RESEARCH_WORKBENCH_HLJ011.md` for precise formats and limitations.
+
+## HLJ-012: Constellation notebook integration
+
+The Local Research Workbench now accepts **five** Atlas export families, including original Constellation research packets (`369-hlj-research-packet/v1`). Topic identity, provisional connections, dossier and reference records must match the Atlas registry; personal notes remain user-authored, unauthenticated and unverified. A visible Constellation shortcut leads to the Workbench for deliberate JSON export/import. Clickable topic links navigate without reloading or discarding the session-only research collection. No new top-bar links, tracking or automatic upload. See `docs/CONSTELLATION_WORKBENCH_HLJ012.md`.
