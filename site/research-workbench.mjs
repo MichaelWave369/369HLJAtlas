@@ -163,6 +163,61 @@ function lab(input,ctx){
    privacy:"Allowlisted source descriptions and settings; exported only on user action.",records},
   rows,"Source files and producer identity are NOT authenticated. Original JSON and hidden lab data are not imported.",topics,[]);
 }
+
+function constellation(input,ctx){
+ if(input.scope!=="Personal research notebook, not reviewed scientific findings"||
+    !obj(input.topic)||!Array.isArray(input.notes)||input.notes.length>179||
+    !Array.isArray(input.relationships)||!Array.isArray(input.sources))
+    fail("Constellation notebook scope or record structure");
+ if(!Array.isArray(ctx.connections))fail("missing current relationship registry");
+ const topicMap=new Map(ctx.topics.topics.map(t=>[t.id,t]));
+ const selected=topicMap.get(input.topic.id);
+ if(!selected)fail("Constellation selected topic is not registered");
+ const identity={id:selected.id,title:selected.title,realm:selected.realm,reviewStatus:selected.reviewStatus};
+ assertSame(input.topic,identity,"Constellation topic identity");
+ const expectedRelationships=ctx.connections.filter(c=>c.a===selected.id||c.b===selected.id);
+ assertSame(input.relationships,expectedRelationships,"Constellation provisional relationships");
+ const d=ctx.research.dossiers.find(x=>x.topicId===selected.id);
+ const expectedDossier=d?{classification:d.classification,question:d.question,
+  supported:d.supported,boundary:d.boundary,sourceIds:d.sourceIds}:null;
+ assertSame(input.dossier,expectedDossier,"Constellation research dossier");
+ const bySource=new Map(ctx.research.sources.map(x=>[x.id,x]));
+ const linkedSources=d?d.sourceIds.map(id=>{
+  const source=bySource.get(id);if(!source)fail("missing Constellation dossier source");
+  return source;
+ }):[];
+ assertSame(input.sources,linkedSources,"Constellation source metadata");
+ const seen=new Set(),notes=[];
+ for(const note of input.notes){
+  if(!obj(note)||!topicMap.has(note.topicId)||seen.has(note.topicId))
+   fail("unknown or repeated Constellation note topic");
+  const content=text(note.text,8000,1);
+  seen.add(note.topicId);notes.push({topicId:note.topicId,text:content});
+ }
+ const createdAt=timestamp(input.generatedAt);
+ const clean={schema:"369-hlj-research-packet/v1",generatedAt:createdAt,topic:identity,
+  scope:"Personal research notebook, not reviewed scientific findings",
+  notes,relationships:expectedRelationships,dossier:expectedDossier,sources:linkedSources,
+  privacy:"Contains personal research notes; exported locally on explicit user action, not uploaded."};
+ const rows=[{heading:"Selected topic · "+selected.title,lines:[
+   fieldsRow("Atlas realm",selected.realm),fieldsRow("Topic review status",selected.reviewStatus),
+   fieldsRow("Personal notes included",String(notes.length)),
+   fieldsRow("Provisional topic connections",String(expectedRelationships.length)),
+   fieldsRow("Source-linked dossier",d?"Editorial starter, not independently validated scientific evidence":"Not available"),
+   fieldsRow("Scientific certification","Not performed")
+ ]}];
+ for(const note of notes){
+  const topic=topicMap.get(note.topicId);
+  rows.push({heading:"Personal note · "+topic.title,lines:[
+    fieldsRow("Topic",topic.title),fieldsRow("Author-supplied text",note.text),
+    fieldsRow("Evidence status","Personal hypothesis or observation, not verified evidence")
+  ]});
+ }
+ return entry("constellation-notes","Constellation · "+selected.title,clean,rows,
+  "Personal notes are editable and unauthenticated. Source and relationship matches mean catalog consistency, NOT scientific validation.",
+  [selected.id,...notes.map(n=>n.topicId)],d?d.sourceIds:[]);
+}
+
 function parseOne(value,ctx){
  if(!obj(value))fail("packet root");
  switch(value.schema){
@@ -170,6 +225,7 @@ function parseOne(value,ctx){
   case PACKET_SCHEMA:return reviews(value,ctx);
   case "369.hlj.evidence-trail-export.v1":return evidence(value,ctx);
   case "369.hlj.lab_bridge.reviewed_packet.v1":return lab(value,ctx);
+  case "369-hlj-research-packet/v1":return constellation(value,ctx);
   default:fail("unknown packet schema");
  }
 }
