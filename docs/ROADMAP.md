@@ -33,3 +33,7 @@ Correct five source titles, preserve an append-only bibliography correction log,
 ## HLJ-009A: Header navigation cleanup
 
 Consolidate eleven crowded header links into accessible grouped desktop dropdowns and a responsive mobile Menu. Preserve all original anchors, add Node coverage and Chrome menu interaction checks, and keep manual touch/assistive-technology review on the acceptance list.
+
+## HLJ-010: Evidence Trail
+
+Add a claim-centered source/audit/correction trace below the existing Verification Desk, with deep links, local public-metadata exports, schema validation and Chrome interaction coverage. No topic receives automatic evidence certification, and the compact top bar remains unchanged. Future tasks: actual DOI retraction checks, claim-level primary-source reviews, and assistive-technology audits.

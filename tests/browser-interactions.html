@@ -48,6 +48,14 @@ const check=setInterval(()=>{
   ensure(q.length===10,"Claim queue did not load all ten entries");
   q[1].click();
   ensure(d.getElementById("verify-title").textContent.length>6,"Claim selection failed");
+  ensure(d.getElementById("evidence-trail")?.dataset.ready==="true","Evidence Trail not initialized");
+  ensure(d.getElementById("trail-claim-id").textContent==="claim-02","Evidence Trail did not follow selected claim");
+  ensure(d.querySelectorAll("#trail-source-list .trail-source").length===2,"Expected both quartz claim sources");
+  ensure(d.getElementById("trail-bib-count").textContent==="1","Quartz bibliography correction missing");
+  ensure(d.getElementById("trail-permalink").href.includes("claim-02"),"Shareable claim URL absent");
+  d.querySelector('#trail-source-list a[data-audit-source="nist-quartz"]').click();
+  ensure(d.getElementById("source-audit-title").textContent.includes("Q to Ra"),"Source audit did not follow deep link");
+
   const notes=d.getElementById("verify-notes"),limits=d.getElementById("verify-limitations");
   notes.value="Source methods need a primary-text cross-check and independent replication review.";
   limits.value="A bibliographic match is not enough to verify the experimental result.";

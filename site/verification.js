@@ -31,6 +31,7 @@ function showClaim(id){
   const option=make("option",source.publisher+" · "+source.title);option.value=source.id;options.append(option);
  }
  saveFormReset();renderQueue();
+ document.dispatchEvent(new CustomEvent("hlj:claim-selected",{detail:{claimId:id}}));
 }
 function renderQueue(){
  const root=$("verification-cards");root.replaceChildren();
