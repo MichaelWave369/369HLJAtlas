@@ -15,5 +15,11 @@ Inspected source exports in AquaCymatics369 and Element Spiral Atlas; implemente
 ## HLJ-005 — PhiOS / Shasta Institute (digital-first gateway)
 Six-stop accessible conceptual visitor walk, source-described PhiOS Web/Mobile/XR gateways, and a bounded synthetic 19-node passive `phi.spatial.scene.v1` export for explicit manual import into PhiOS XR. No actual campus, autonomous XR control or live integration claims. Independent browser and Quest acceptance required before labeling hardware-qualified.
 
+## HLJ-006 — Living Research Laboratory (educational model preview)
+Three interactive guided protocols: 1D string harmonics, exact Euler counts for five Platonic solids, and a deterministic 40-toss fair-coin null model. Users must state a prediction, inspect model outputs and limitations, and manually capture an observation and alternative explanation. Local session notebook exports portable JSON; no measured science or paranormal claims. Complete hands-on browser acceptance before describing the preview as production-qualified.
+
+## Next proposal: HLJ-007 — Curated review and browser qualification
+Build an editorial source-to-claim review queue, correct stale references, and add real-browser smoke gates before adding more experiments or expanding source authority.
+
 ## Acceptance
 Tests green, 179 unique topic IDs, every topic accessible by search, browse and keyboard, external links safe, clear review status and no hidden tracking. GitHub Actions passing is not a substitute for manual browser testing.
