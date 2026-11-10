@@ -50,7 +50,7 @@ test("Portable project includes only chosen reviewed packet kinds and original p
  const parsed=inspectResearchProject(copy(p),ctx);
  assert.equal(parsed.file.focus.title,focus.title);
  assert.equal(parsed.reviewed.length,3);
- assert.equal(parsed.recordCount,3);
+ assert.equal(parsed.recordCount,4); // one model, one proposal, plus selected topic and one personal note
  assert.ok(parsed.topicIds.includes("cymatics"));
  assert.ok(JSON.stringify(parsed.file).includes("private original research note"));
  assert.match(parsed.file.evidenceBoundary,/not scientific validation/);
