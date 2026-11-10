@@ -104,3 +104,43 @@
 #trail-export-status{font-size:12px;color:var(--gold)}
 @media(max-width:900px){.trail-intro{flex-direction:column}.trail-source-list,.trail-bottom{grid-template-columns:1fr}}
 @media(max-width:550px){.evidence-trail{padding:15px}.trail-summary{grid-template-columns:1fr 1fr}.trail-path{grid-template-columns:1fr 1fr}.trail-claim{padding:15px}.trail-source{padding:14px}}
+
+/* HLJ-011: integrated private packet workbench, not a new main-nav destination */
+.packet-workbench{margin:23px 0;background:linear-gradient(130deg,#142e35,#0b2028);border:1px solid #5c867a;border-radius:15px;padding:25px;scroll-margin-top:90px}
+.packet-workbench-heading{display:flex;align-items:start;justify-content:space-between;gap:25px}
+.packet-workbench-heading h3{font:34px Georgia,serif;line-height:1.2;margin:7px 0 11px}
+.packet-workbench-heading p:not(.eyebrow),.packet-workbench-columns p{font-size:12px;color:var(--muted);line-height:1.75}
+.packet-workbench-tally{display:grid;grid-template-columns:1fr;gap:3px;flex:0 0 125px;border-left:1px solid #43685d;padding-left:18px}
+.packet-workbench-tally strong{font:25px Georgia,serif;color:var(--gold)}
+.packet-workbench-tally span{font-size:10px;color:var(--muted)}
+.packet-workbench-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:15px;margin-top:19px}
+.packet-workbench-import,.packet-workbench-archive{padding:19px;border-radius:12px;border:1px solid #3d695e;background:#10282f}
+.packet-workbench-columns h4{font:25px Georgia,serif;margin:0 0 10px}
+.packet-workbench-import>label{display:block;color:#cde4d9;font-size:12px;margin:16px 0 7px}
+.packet-workbench-import input[type=file]{width:100%;background:#0c2027;border:1px dashed #628477;border-radius:9px;padding:12px;color:#eaf0ea;font-size:12px}
+#workbench-message,#workbench-export-status{font-size:12px;color:var(--gold)}
+#workbench-preview{margin-top:18px;padding-top:18px;border-top:1px solid #4c7267}
+#workbench-preview h5{font:24px Georgia,serif;margin:0 0 9px}
+#workbench-preview-entries,.workbench-preview-entries{display:grid;gap:9px;margin:14px 0}
+.workbench-packet-preview{background:#112f35;border:1px solid #3f695d;border-radius:9px;padding:13px}
+.workbench-packet-preview>strong{font-size:13px;display:block}
+.workbench-packet-preview>small{display:block;font-size:10px;color:var(--gold);margin:5px 0}
+.workbench-details{margin:9px 0;border:1px solid #3b5e57;border-radius:8px;background:#0b2328}
+.workbench-details summary{padding:10px 12px;cursor:pointer;color:var(--mint);font-size:12px;line-height:1.5}
+.workbench-details[open] summary{border-bottom:1px solid #3f685e}
+.workbench-details dl{display:grid;grid-template-columns:1fr;gap:4px;margin:10px;padding:3px}
+.workbench-details dt{font-size:11px;color:var(--gold);margin-top:9px}
+.workbench-details dd{margin:0 0 7px;color:#d3e5d9;font-size:12px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.packet-workbench .workbench-warning{font-size:11px;color:var(--gold);line-height:1.65;background:#302c233d;padding:9px 11px;border-left:3px solid var(--gold)}
+.packet-workbench .workbench-confirm{display:flex;gap:9px;font-size:12px;line-height:1.7;color:#d3e4d8;margin:15px 0}
+.workbench-confirm input{flex:0 0 auto;margin-top:4px;accent-color:var(--mint)}
+#workbench-approve,.workbench-actions button{background:var(--mint);color:#09241e;border:0;border-radius:8px;padding:12px 15px;font-weight:800;font-size:12px}
+#workbench-approve:disabled,.workbench-actions button:disabled{opacity:.43;cursor:not-allowed}
+.workbench-archived-item{display:flex;justify-content:space-between;align-items:start;gap:9px;border:1px solid #42675b;background:#112e34;border-radius:9px;padding:13px;margin:9px 0}
+.workbench-archived-item strong{display:block;font-size:13px;line-height:1.5}
+.workbench-archived-item small{display:block;color:#c8b17d;font-size:11px;margin-top:5px}
+.workbench-archived-item button{border:1px solid #6b775c;border-radius:6px;background:transparent;color:var(--gold);padding:8px;font-size:11px}
+.workbench-actions{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}
+.workbench-actions #workbench-clear{background:transparent;color:#dbe6dd;border:1px solid #507b6e}
+@media(max-width:880px){.packet-workbench-columns{grid-template-columns:1fr}}
+@media(max-width:560px){.packet-workbench{padding:15px}.packet-workbench-heading{flex-direction:column;gap:10px}.packet-workbench-tally{border:0;border-top:1px solid #43685d;padding:10px 0 0;display:flex;gap:8px;align-items:center}.packet-workbench-import,.packet-workbench-archive{padding:14px}}

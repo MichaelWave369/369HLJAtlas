@@ -37,3 +37,7 @@ Consolidate eleven crowded header links into accessible grouped desktop dropdown
 ## HLJ-010: Evidence Trail
 
 Add a claim-centered source/audit/correction trace below the existing Verification Desk, with deep links, local public-metadata exports, schema validation and Chrome interaction coverage. No topic receives automatic evidence certification, and the compact top bar remains unchanged. Future tasks: actual DOI retraction checks, claim-level primary-source reviews, and assistive-technology audits.
+
+## HLJ-011: Local research packet convergence
+
+A review-before-apply Research Workbench inside the existing Living Lab, accepting four validated local JSON packet families and its own consolidated export. Cross-check deterministic computations, claim/source IDs, and published catalog trail values. Retain approved summaries in memory only. Keep manual release gates for browser/assistive technology and primary-source scientific review.
