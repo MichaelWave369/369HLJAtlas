@@ -15,9 +15,19 @@ jobs:
         with:
           node-version: '22'
       - run: npm test
+  browser_smoke:
+    runs-on: ubuntu-24.04
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify dynamic site boot in installed headless Chrome
+        run: node scripts/browser-smoke.mjs
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: test
+    needs: [test, browser_smoke]
     runs-on: ubuntu-latest
     environment:
       name: github-pages

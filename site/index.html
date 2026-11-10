@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09161d"><meta name="description" content="A research atlas bridging geometry, resonance, consciousness and community through Hope, Love and Joy."><title>369 HLJ Atlas | Hope · Love · Joy</title><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script><script src="./constellation.js" defer></script><script src="./lab-bridge.js" type="module"></script><script src="./institute.js" type="module"></script><script src="./living-lab.js" type="module"></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09161d"><meta name="description" content="A research atlas bridging geometry, resonance, consciousness and community through Hope, Love and Joy."><title>369 HLJ Atlas | Hope · Love · Joy</title><link rel="stylesheet" href="./style.css"><script src="./app.js" defer></script><script src="./constellation.js" defer></script><script src="./lab-bridge.js" type="module"></script><script src="./institute.js" type="module"></script><script src="./living-lab.js" type="module"></script><script src="./verification.js" type="module"></script></head>
 <body><a class="skip" href="#explore">Skip to atlas explorer</a><div class="aurora" aria-hidden="true"></div>
-<header class="wrap top"><a class="brand" href="./"><span class="phi">Φ</span><span><strong>369 HLJ ATLAS</strong><small>HOPE / LOVE / JOY</small></span></a><nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#constellation">Constellation</a><a href="#research">Research</a><a href="#living-lab">Living Lab</a><a href="#connections">Crossroads</a><a href="#institute">Shasta Institute</a><a href="#lab-bridge">Lab Bridge</a><a href="#labs">Laboratories</a><a href="#promise">Our promise</a></nav><a class="source" href="https://github.com/MichaelWave369/369HLJAtlas" target="_blank" rel="noopener noreferrer">Source ↗</a></header>
+<header class="wrap top"><a class="brand" href="./"><span class="phi">Φ</span><span><strong>369 HLJ ATLAS</strong><small>HOPE / LOVE / JOY</small></span></a><nav aria-label="Main navigation"><a href="#explore">Explore</a><a href="#constellation">Constellation</a><a href="#research">Research</a><a href="#verification">Verify Claims</a><a href="#living-lab">Living Lab</a><a href="#connections">Crossroads</a><a href="#institute">Shasta Institute</a><a href="#lab-bridge">Lab Bridge</a><a href="#labs">Laboratories</a><a href="#promise">Our promise</a></nav><a class="source" href="https://github.com/MichaelWave369/369HLJAtlas" target="_blank" rel="noopener noreferrer">Source ↗</a></header>
 <main><section class="wrap hero"><div class="herotext"><p class="eyebrow">✦ A BRIDGE FOR CURIOUS MINDS</p><h1>We can seek the truth <em>together.</em></h1><p class="lead">An open exploration of ancient wisdom, measurable science, human consciousness and the joy of discovery. No agreement required. Evidence welcome.</p><div class="actions"><a class="button primary" href="#explore">Explore the Atlas ↗</a><a class="button outline" href="#promise">Our research promise</a></div><div class="stats"><span><b id="total">179</b> FOUNDING TOPICS</span><span><b>09</b> KNOWLEDGE REALMS</span><span><b>03</b> RESEARCH LENSES</span></div></div><div class="geometry" role="img" aria-label="Decorative interlocking circles symbolizing connection"><svg viewBox="0 0 500 500" aria-hidden="true"><circle cx="250" cy="250" r="235" fill="none" stroke="#527e79" stroke-width="1"/><g fill="none" stroke="#8bdacb" stroke-opacity=".7" stroke-width="1.4"><circle cx="250" cy="250" r="145"/><circle cx="250" cy="250" r="84"/><circle cx="250" cy="166" r="84"/><circle cx="250" cy="334" r="84"/><circle cx="323" cy="208" r="84"/><circle cx="177" cy="208" r="84"/><circle cx="323" cy="292" r="84"/><circle cx="177" cy="292" r="84"/><path d="M250 105 375 322 125 322Z M250 395 125 178 375 178Z"/></g><circle cx="250" cy="250" r="5" fill="#efc891"/></svg><p>DIFFERENT PATHS · SHARED CURIOSITY</p></div></section>
 <section class="wrap lenses" aria-labelledby="lenses-title"><p class="eyebrow">THREE RESEARCH LENSES</p><h2 id="lenses-title">Wonder with a compass.</h2><div class="lensgrid"><article><small>01 / SCIENCE</small><h3>Observe</h3><p>What is measurable and reproducible? Which sources support a precise claim?</p></article><article><small>02 / EXPERIMENT</small><h3>Question</h3><p>Which hypotheses, controls, alternatives and failures would teach us something?</p></article><article><small>03 / CULTURE</small><h3>Understand</h3><p>Where did a tradition come from, and what does it mean to its practitioners?</p></article></div></section>
 <section class="wrap explorer" id="explore"><p class="eyebrow">NINE KNOWLEDGE REALMS</p><h2>Begin anywhere.</h2><p class="sub">All 179 founding topics are included. Listing a claim is not endorsing it. Every entry starts unreviewed.</p><div id="realms" class="realmgrid"></div><div class="browser"><div class="browsertop"><div><p class="eyebrow">KNOWLEDGE REGISTRY</p><h3 id="current-realm">All topics</h3></div><span id="count" aria-live="polite"></span></div><div class="controls"><label class="search"><span class="sr">Search topics</span><input id="search" type="search" placeholder="Search resonance, geometry, healing..."></label><button id="reset" type="button">Reset filters</button></div><div class="browsergrid"><div><div id="topics" class="topics" aria-live="polite"></div><p id="empty" hidden>No matching topics. Try another search.</p></div><aside id="detail" tabindex="-1" aria-labelledby="detail-heading"><p class="eyebrow">RESEARCH STARTING POINT</p><h3 id="detail-heading">Choose a topic.</h3><p>Open a research card to find questions and related concepts.</p></aside></div></div></section>
@@ -86,6 +86,61 @@
   <div id="living-records" class="living-records" aria-live="polite"><p>No learning records captured.</p></div>
   <div class="living-notebook-actions"><button type="button" id="living-export" disabled>Export research notebook (JSON)</button><button type="button" id="living-clear" disabled>Clear journal</button><span id="living-export-status" role="status" aria-live="polite"></span></div>
  </div>
+</section>
+
+<section class="wrap section verification-section" id="verification" aria-labelledby="verification-heading">
+  <p class="eyebrow">HLJ-007 / RESEARCH VERIFICATION DESK</p>
+  <h2 id="verification-heading">A claim is not its evidence.</h2>
+  <p class="sub">Follow ten precisely framed research questions to their sources, limitations and open checks. This is an editorial review queue, not an automated truth engine. No citation has been independently certified merely by appearing here.</p>
+  <div class="verify-summary">
+    <div><strong id="verify-total">10</strong><span>pending claim questions</span></div>
+    <div><strong id="verify-sources">19</strong><span>catalogued references</span></div>
+    <div><strong id="verify-local">0</strong><span>local review proposals</span></div>
+  </div>
+  <div class="verify-layout" id="verification-root" data-ready="false">
+    <div class="verify-queue">
+      <div class="verify-heading"><h3>Open questions</h3><span id="verify-visible" aria-live="polite">Loading…</span></div>
+      <div class="verify-filters"><label>Find a claim <input id="verify-search" type="search" placeholder="Search geometry, acoustics, evidence…"></label>
+       <label>Review category <select id="verify-filter"><option value="all">All categories</option></select></label></div>
+      <div id="verification-cards" class="verification-cards" aria-label="Claim review queue"></div>
+      <p id="verify-empty" hidden>No questions match these filters.</p>
+    </div>
+    <div class="verify-inspector">
+      <p class="eyebrow">RESEARCH SCOPE / SELECT A CLAIM</p>
+      <h3 id="verify-title">Open a claim to inspect its sources.</h3>
+      <p id="verify-statement"></p>
+      <p id="verify-boundary" class="verify-warning"></p>
+      <p id="verify-question"></p>
+      <div id="verify-source-list" class="verify-source-list"></div>
+      <p class="verify-meta">Source metadata has not been independently checked for link validity, corrected publication status or direct claim correspondence.</p>
+      <div class="verify-reviewer">
+        <h4>Reviewer worksheet</h4>
+        <p>Nothing here changes the public Atlas. Opening a source does not mean you have verified it. Your notes are stored only in this tab until exported.</p>
+        <label>Which source did you inspect? <select id="verify-source-choice"></select></label>
+        <label>What did you find? <select id="verify-assessment">
+          <option value="needs-more-evidence">Needs more evidence</option>
+          <option value="source-aligned">Appears aligned to the narrow claim</option>
+          <option value="concerns-raised">Raises concerns or contradicting details</option>
+          <option value="not-applicable">Source does not apply to this claim</option>
+        </select></label>
+        <label>Your source observations (minimum 20 characters) <textarea id="verify-notes" maxlength="1800" rows="4" placeholder="Describe the relevant methods, sample, limitations or quotation in your own words."></textarea></label>
+        <label>What remains uncertain? (minimum 15 characters) <textarea id="verify-limitations" maxlength="1800" rows="3" placeholder="List caveats, missing data, competing interpretations or sources."></textarea></label>
+        <label>Proposed wording correction (optional) <textarea id="verify-correction" maxlength="800" rows="2" placeholder="Suggest a precise change. This will be an unpublished proposal only."></textarea></label>
+        <label class="verify-attest"><input id="verify-attestation" type="checkbox"> I personally inspected the selected source and understand this worksheet is not independent scientific certification.</label>
+        <button id="verify-capture" type="button">Capture local review proposal</button>
+        <p id="verify-capture-status" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+  <div class="verify-log">
+    <div><p class="eyebrow">PUBLIC CORRECTION HISTORY</p><h3>A ledger above ego.</h3><p id="verify-correction-history">No published corrections recorded. This does not mean the Atlas is error-free.</p></div>
+    <div><p class="eyebrow">LOCAL UNPUBLISHED PROPOSALS</p><h3>Your review packet</h3>
+      <div id="verify-proposals" aria-live="polite"><p>No proposals captured.</p></div>
+      <div class="verify-actions"><button id="verify-export" type="button" disabled>Export review packet (JSON)</button><button id="verify-clear" type="button" disabled>Clear local proposals</button></div>
+      <p id="verify-export-status" role="status" aria-live="polite"></p>
+      <p class="verify-meta">To publish a correction, a human editor must review primary sources, address contrary evidence, and approve a pull request. A review packet is not publication.</p>
+    </div>
+  </div>
 </section>
 <section class="wrap section" id="research" aria-labelledby="research-title">
   <p class="eyebrow">HLJ-002 / SOURCE-BACKED INQUIRY</p>

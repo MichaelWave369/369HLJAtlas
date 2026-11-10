@@ -67,3 +67,7 @@ Click **Export passive XR scene JSON** to build a strictly bounded `phi.spatial.
 ## HLJ-006 — Living Research Laboratory
 
 Three guided, zero-dependency educational models: 1D fixed-string standing waves, convex Platonic-solid Euler counts, and reproducible seeded fair-coin null-model trials. Visitors write a prediction, run a mathematical model, record an observation and a competing interpretation, then explicitly capture up to 12 records for local-only JSON export. Source references are contextual, not measurements or proof. See [docs/LIVING_RESEARCH_LAB.md](docs/LIVING_RESEARCH_LAB.md). No source-project code is copied or modified.
+
+## HLJ-007 — Research Verification Desk
+
+Ten narrowly restated claims use explicit relationships to the existing 19 source records: reports, context, qualifications or distinct experimental protocols. Every claim starts **awaiting primary-source check**, never automatically verified. A browser-local reviewer worksheet lets visitors inspect source links, record observations and limitations, and explicitly export **unpublished review proposals** as JSON. The corrections ledger starts empty; absence of a recorded correction is not evidence of accuracy. No automatic publishing, scoring, source authentication, storage or analytics. New CI browser startup smoke checks major site sections before Pages deployment; manual accessibility and source audits remain open. See [docs/RESEARCH_VERIFICATION_PROTOCOL.md](docs/RESEARCH_VERIFICATION_PROTOCOL.md).
