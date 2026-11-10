@@ -89,7 +89,7 @@ test("portable workbench archive roundtrips with four accepted packets and refus
  assert.deepEqual(again.map(x=>x.kind),normalized.map(x=>x.kind));
  const duplicate=createWorkbenchExport([normalized[0],normalized[0]],stamp);
  assert.throws(()=>inspectWorkbenchInput(duplicate,ctx));
- const forged=copy(bundle);forged.entries[0].packet.records[0].observation="A fake observation altered after approval.";
+ const forged=copy(bundle);forged.entries[0].packet.records[0].result.outputs.eulerCharacteristic=999;
  assert.throws(()=>inspectWorkbenchInput(forged,ctx));
  assert.throws(()=>createWorkbenchExport([],stamp));
  assert.throws(()=>createWorkbenchExport(Array(MAX_ENTRIES+1).fill(normalized[0]),stamp));

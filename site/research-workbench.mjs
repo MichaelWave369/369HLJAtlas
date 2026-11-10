@@ -111,7 +111,14 @@ function evidence(input,ctx){
   fieldsRow("Evidence boundary",expected.scopeLimit),
   fieldsRow("Source references",String(expected.sourceCount)),
   fieldsRow("Independent evidence verification","Not performed"),
-  fieldsRow("Retraction checks","Not performed")
+  fieldsRow("Retraction checks","Not performed"),
+  ...expected.sourceRows.flatMap(s=>[
+    fieldsRow("Reference title",s.title),
+    fieldsRow("Reference URL",s.url),
+    fieldsRow("Cited role",s.relationship),
+    fieldsRow("Review observation",s.audit.observation),
+    fieldsRow("Bibliography correction count",s.bibliographyCorrections.length)
+  ])
  ];
  const topics=[expected.topicId],sources=expected.sourceRows.map(s=>s.sourceId);
  return entry("evidence-trail","Evidence Trail · "+expected.topicTitle,clean,
@@ -142,8 +149,11 @@ function lab(input,ctx){
     version,validation,fileName,sha256:r.sha256,topicId:r.topicId,reviewedAt,reviewNote};
   records.push(clean);if(r.topicId)topics.push(r.topicId);
   rows.push({heading:label+" · "+fileName,lines:[
-    fieldsRow("Format",format),fieldsRow("Producer declared",sourceClaim),
-    fieldsRow("Limitation",boundary),fieldsRow("Mapped Atlas topic",r.topicId||"Not associated"),
+    fieldsRow("Format",format),fieldsRow("Version",version),fieldsRow("Description",description),
+    fieldsRow("Producer declared",sourceClaim),fieldsRow("Limitation",boundary),
+    fieldsRow("Mapped Atlas topic",r.topicId||"Not associated"),
+    fieldsRow("Inspection note",reviewNote),fieldsRow("Recorded review date",reviewedAt),
+    fieldsRow("Byte fingerprint",r.sha256||"Unavailable; not an authenticity signature"),
     ...fields.map(f=>fieldsRow(f.label,f.value))
   ]});
  }
