@@ -23,12 +23,38 @@ function renderRecord(record){
  for(const line of record.lines){list.append(el("dt",line.name),el("dd",line.value));}
  d.append(list);return d;
 }
+
+function renderTopicLinks(packet){
+ const wrap=el("div",undefined,"workbench-topic-links");
+ wrap.append(el("span","Atlas topics: ","workbench-topic-label"));
+ const seen=new Set(),byId=new Map(ctx.topics.topics.map(t=>[t.id,t]));
+ for(const topicId of packet.topicIds){
+  if(seen.has(topicId)||!byId.has(topicId))continue;
+  seen.add(topicId);
+  const topic=byId.get(topicId),link=el("a",topic.title+" ↗");
+  link.href="?topic="+encodeURIComponent(topicId)+"#constellation";
+  link.dataset.topic=topicId;
+  link.addEventListener("click",event=>{
+    event.preventDefault();
+    document.dispatchEvent(new CustomEvent("hlj:topic-selected",{detail:{topicId}}));
+    const url=new URL(window.location.href);
+    url.searchParams.set("topic",topicId);
+    url.hash="constellation";
+    history.replaceState(null,"",url);
+    $("constellation")?.scrollIntoView({behavior:"smooth",block:"start"});
+  });
+  wrap.append(link);
+ }
+ return wrap;
+}
+
 function renderPacket(entry){
  const div=el("div",undefined,"workbench-packet-preview");
  div.append(el("strong",entry.title),
    el("small",entry.kind.replaceAll("-"," ")+" · "+entry.recordCount+" records"),
    el("p",entry.limits));
  for(const row of entry.rows)div.append(renderRecord(row));
+ div.append(renderTopicLinks(entry));
  return div;
 }
 async function inspect(){
@@ -64,7 +90,7 @@ function refreshCollection(){
     el("small",packet.recordCount+" record(s) · "+packet.fileName));
   const remove=el("button","Remove");remove.type="button";
   remove.addEventListener("click",()=>{collection.splice(index,1);refreshCollection();});
-  row.append(copy,remove);root.append(row);
+  row.append(copy,remove);row.append(renderTopicLinks(packet));root.append(row);
  });
  $("workbench-count").textContent=collection.length+" / "+MAX_ENTRIES;
  $("workbench-record-count").textContent=String(collection.reduce((sum,e)=>sum+e.recordCount,0));
@@ -100,10 +126,10 @@ function exportCollection(){
  }catch(err){$("workbench-export-status").textContent="Export failed: "+String(err.message||err);}
 }
 async function init(){
- const [topics,verification,research,audit,sourceCorrections,claimCorrections]=await Promise.all([
-  get("topics"),get("verification"),get("research"),get("source-audit"),get("source-corrections"),get("corrections")
+ const [topics,verification,research,audit,sourceCorrections,claimCorrections,connections]=await Promise.all([
+  get("topics"),get("verification"),get("research"),get("source-audit"),get("source-corrections"),get("corrections"),get("connections")
  ]);
- ctx={topics,verification,research,audit,sourceCorrections,claimCorrections};
+ ctx={topics,verification,research,audit,sourceCorrections,claimCorrections,connections};
  $("workbench-file").addEventListener("change",inspect);
  $("workbench-confirm").addEventListener("change",()=>{$("workbench-approve").disabled=!preview||!$("workbench-confirm").checked;});
  $("workbench-approve").addEventListener("click",approve);

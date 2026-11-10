@@ -8,7 +8,7 @@ import {makeReviewProposal,createReviewPacket} from "../site/verification-engine
 import {buildEvidenceTrail,makeTrailExport} from "../site/evidence-trail.mjs";
 const load=name=>JSON.parse(readFileSync(new URL("../site/data/"+name+".json",import.meta.url),"utf8"));
 const ctx={topics:load("topics"),verification:load("verification"),research:load("research"),audit:load("source-audit"),
- sourceCorrections:load("source-corrections"),claimCorrections:load("corrections")};
+ sourceCorrections:load("source-corrections"),claimCorrections:load("corrections"),connections:load("connections")};
 const stamp="2026-11-09T23:00:00.000Z",copy=v=>JSON.parse(JSON.stringify(v));
 const computed=makeNotebookEntry({run:simulate("platonic-solids",{solid:"cube"}),
  prediction:"Euler characteristic should equal exactly two.",
@@ -115,4 +115,76 @@ test("Workbench UI requires local file review, explicit consent and supports loc
  assert.equal(spawnSync(process.execPath,["--check",new URL("../site/research-workbench.js",import.meta.url).pathname],{encoding:"utf8"}).status,0);
  const nav=html.split('<nav class="site-nav"')[1].split("</nav>")[0];
  assert.ok(!nav.includes('href="#packet-workbench"'),"Keep compact header unchanged");
+});
+
+const selectedCosmos=ctx.topics.topics.find(t=>t.id==="cymatics");
+const cosmosDossier=ctx.research.dossiers.find(d=>d.topicId===selectedCosmos.id);
+const cosmosPacket={
+ schema:"369-hlj-research-packet/v1",generatedAt:stamp,
+ topic:{id:selectedCosmos.id,title:selectedCosmos.title,realm:selectedCosmos.realm,reviewStatus:selectedCosmos.reviewStatus},
+ scope:"Personal research notebook, not reviewed scientific findings",
+ notes:[{topicId:"cymatics",text:"My own observation: boundary conditions may change the pattern and need testing."},
+        {topicId:"sacred-geometry",text:"A symbolic resemblance is not proof of a physical connection."}],
+ relationships:ctx.connections.filter(c=>c.a===selectedCosmos.id||c.b===selectedCosmos.id),
+ dossier:{classification:cosmosDossier.classification,question:cosmosDossier.question,
+  supported:cosmosDossier.supported,boundary:cosmosDossier.boundary,sourceIds:cosmosDossier.sourceIds},
+ sources:cosmosDossier.sourceIds.map(id=>ctx.research.sources.find(s=>s.id===id)),
+ privacy:"Exported locally in your browser; not uploaded by this application."
+};
+test("Constellation notebook imports all user text and grounded topic identities",()=>{
+ const [out]=inspectWorkbenchInput(cosmosPacket,ctx);
+ assert.equal(out.kind,"constellation-notes");assert.equal(out.recordCount,3);
+ assert.deepEqual(out.topicIds,["cymatics","sacred-geometry"]);
+ assert.deepEqual(out.sourceIds,cosmosDossier.sourceIds);
+ assert.equal(out.packet.notes.length,2);
+ assert.ok(out.rows.some(row=>row.lines.some(line=>line.value.includes("symbolic resemblance"))));
+ assert.match(out.limits,/NOT scientific validation/i);
+});
+test("Constellation with zero notes remains a valid selected-topic packet",()=>{
+ const empty=copy(cosmosPacket);empty.notes=[];
+ const [r]=inspectWorkbenchInput(empty,ctx);
+ assert.equal(r.recordCount,1);assert.equal(r.packet.notes.length,0);
+});
+test("long personal notes display fully rather than silently truncating",()=>{
+ const long=copy(cosmosPacket);long.notes=[{topicId:"cymatics",text:"A".repeat(7000)}];
+ const [out]=inspectWorkbenchInput(long,ctx);
+ assert.equal(out.packet.notes[0].text.length,7000);
+ assert.ok(out.rows.some(row=>row.lines.some(line=>line.value.length===7000)));
+});
+test("Constellation rejects forged catalog links, changed source metadata and bad notes",()=>{
+ const bad=[
+ p=>p.topic.title="Certified",
+ p=>p.topic.reviewStatus="peer-reviewed",
+ p=>p.relationships.push({a:"cymatics",b:"magic",relation:"causes"}),
+ p=>p.dossier.supported="Scientifically proven healing",
+ p=>p.sources[0].title="Fake scientific paper",
+ p=>p.notes[0].topicId="unknown-topic",
+ p=>p.notes[1].topicId=p.notes[0].topicId,
+ p=>p.notes[0].text="Z".repeat(8001),
+ p=>p.notes[0].text="",
+ p=>p.scope="Proof of magic",
+ p=>p.generatedAt="unknown time"
+ ];
+ for(const change of bad){const packet=copy(cosmosPacket);change(packet);assert.throws(()=>inspectWorkbenchInput(packet,ctx));}
+ const missing=copy(ctx);delete missing.connections;
+ assert.throws(()=>inspectWorkbenchInput(cosmosPacket,missing));
+});
+test("all five producer formats roundtrip with private notes and no authority upgrade",()=>{
+ const entries=[journal,review,evidence,lab,cosmosPacket].flatMap(p=>inspectWorkbenchInput(p,ctx));
+ const bundle=createWorkbenchExport(entries,stamp);
+ assert.equal(bundle.entries.length,5);
+ const restored=inspectWorkbenchInput(copy(bundle),ctx);
+ assert.deepEqual(restored.map(x=>x.kind),entries.map(x=>x.kind));
+ assert.equal(restored[4].packet.notes[0].text,cosmosPacket.notes[0].text);
+ const dupe={...bundle,entries:[...bundle.entries,bundle.entries[4]]};
+ assert.throws(()=>inspectWorkbenchInput(dupe,ctx));
+});
+test("in-page topic links keep clean header and Constellation state",()=>{
+ const js=readFileSync(new URL("../site/research-workbench.js",import.meta.url),"utf8");
+ const con=readFileSync(new URL("../site/constellation.js",import.meta.url),"utf8");
+ const html=readFileSync(new URL("../site/index.html",import.meta.url),"utf8");
+ assert.match(js,/hlj:topic-selected/);assert.match(js,/preventDefault/);
+ assert.match(js,/history.replaceState/);assert.match(con,/hlj:topic-selected/);
+ assert.ok(html.includes('href="#packet-workbench"'));
+ assert.ok(!html.split('<nav class="site-nav"')[1].split("</nav>")[0].includes('href="#packet-workbench"'));
 });

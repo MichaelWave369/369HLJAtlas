@@ -41,3 +41,7 @@ Add a claim-centered source/audit/correction trace below the existing Verificati
 ## HLJ-011: Local research packet convergence
 
 A review-before-apply Research Workbench inside the existing Living Lab, accepting four validated local JSON packet families and its own consolidated export. Cross-check deterministic computations, claim/source IDs, and published catalog trail values. Retain approved summaries in memory only. Keep manual release gates for browser/assistive technology and primary-source scientific review.
+
+## HLJ-012: Constellation notebooks in the unified Workbench
+
+Import Constellation JSON with strict topic, relationship and dossier/reference reconciliation; preserve full personal notes in the consent-gated preview; link packet topics into the live Constellation without resetting memory. Existing 256 KiB per-file and eight-packet limits remain. Test valid and malformed imports, bundled roundtrip and Chrome navigation. Manual touch and screen-reader qualification still pending.

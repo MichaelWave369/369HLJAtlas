@@ -105,6 +105,50 @@ const check=setInterval(async()=>{
   ensure(d.getElementById("workbench-count").textContent==="1 / 8","Reviewed packet was not added");
   d.getElementById("workbench-clear").click();
   ensure(d.getElementById("workbench-count").textContent==="0 / 8","Clear failed to empty Workbench");
+
+  // Constellation's original packet shape, built from the actual public catalog.
+  const [topicsNow,linksNow,researchNow]=await Promise.all([
+    d.defaultView.fetch("./data/topics.json").then(r=>r.json()),
+    d.defaultView.fetch("./data/connections.json").then(r=>r.json()),
+    d.defaultView.fetch("./data/research.json").then(r=>r.json())
+  ]);
+  const topic=topicsNow.topics.find(t=>t.id==="cymatics");
+  const dossier=researchNow.dossiers.find(x=>x.topicId==="cymatics");
+  const constellationPacket={
+    schema:"369-hlj-research-packet/v1",generatedAt:"2026-11-09T23:00:00Z",
+    topic:{id:topic.id,title:topic.title,realm:topic.realm,reviewStatus:topic.reviewStatus},
+    scope:"Personal research notebook, not reviewed scientific findings",
+    notes:[{topicId:"cymatics",text:"An original observation, not a measured scientific finding."},
+           {topicId:"sacred-geometry",text:"Visual similarity needs independent investigation."}],
+    relationships:linksNow.filter(c=>c.a==="cymatics"||c.b==="cymatics"),
+    dossier:{classification:dossier.classification,question:dossier.question,
+      supported:dossier.supported,boundary:dossier.boundary,sourceIds:dossier.sourceIds},
+    sources:dossier.sourceIds.map(id=>researchNow.sources.find(s=>s.id===id)),
+    privacy:"Exported locally in your browser; not uploaded by this application."
+  };
+  const noteFile=new d.defaultView.File([JSON.stringify(constellationPacket)],"constellation-notes.json",{type:"application/json"});
+  const noteTransfer=new d.defaultView.DataTransfer();
+  noteTransfer.items.add(noteFile);
+  chooser.files=noteTransfer.files;
+  chooser.dispatchEvent(new d.defaultView.Event("change",{bubbles:true}));
+  await new Promise(resolve=>setTimeout(resolve,500));
+  ensure(!d.getElementById("workbench-preview").hidden,"Constellation notebook did not preview");
+  ensure(d.getElementById("workbench-approve").disabled,"Constellation approval bypassed consent");
+  ensure(d.querySelectorAll("#workbench-preview-entries .workbench-details").length===3,
+    "Constellation selected topic and two notes not all previewed");
+  d.getElementById("workbench-confirm").click();
+  d.getElementById("workbench-approve").click();
+  ensure(d.getElementById("workbench-count").textContent==="1 / 8","Constellation packet not added after review");
+  const linked=d.querySelector('#workbench-archive a[data-topic="sacred-geometry"]');
+  ensure(!!linked,"Note topic deep link missing");
+  linked.click();
+  ensure(d.getElementById("cosmos-inspector-title").textContent==="Sacred Geometry",
+    "Constellation selection did not follow linked topic");
+  ensure(d.getElementById("workbench-count").textContent==="1 / 8",
+    "Topic navigation discarded the session");
+  d.getElementById("workbench-clear").click();
+  ensure(d.getElementById("workbench-count").textContent==="0 / 8","Constellation packet clear failed");
+
   d.getElementById("institute-next").click();
   ensure(d.getElementById("institute-progress").textContent==="Stop 2 of 6","Visitor guide next-stop navigation failed");
   d.querySelector("#realms button").click();

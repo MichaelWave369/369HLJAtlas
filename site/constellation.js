@@ -174,6 +174,9 @@
       $("cosmos-reset-view").addEventListener("click",()=>{view=defaultView();applyView();});
       $("cosmos-note").addEventListener("input",event=>{if(selected)storedNotes.set(selected,event.target.value);$("cosmos-note-status").textContent="Notes remain in this tab until exported.";});
       $("cosmos-export").addEventListener("click",exportPacket);
+      document.addEventListener("hlj:topic-selected",event=>{
+        if(byId.has(event.detail?.topicId))selectTopic(event.detail.topicId);
+      });
       positionNodes();setupDrag();
       const candidate=new URLSearchParams(location.search).get("topic");
       selectTopic(byId.has(candidate)?candidate:"cymatics");
