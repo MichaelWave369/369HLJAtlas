@@ -63,3 +63,7 @@ This is **manual interoperability** only. It does not access any other app's bro
 A six-stop conceptual visitor map introduces The Open Door, Geometry Garden, Resonance Studio, Evidence Library, Consciousness Observatory, and Joy Commons. The map describes a **future educational vision**, not a built or approved facility. A source-documented PhiOS gateway links to independent Web, Mobile, XR and PhiXRCommons projects; these are user-initiated links and not native installations.
 
 Click **Export passive XR scene JSON** to build a strictly bounded `phi.spatial.scene.v1` file (nine realm spheres and ten synthetic research markers). Import it explicitly via PhiOS XR's existing ΦSpatial Scene Bridge and confirm before display. No personal notes or measurements are included, and there is no automatic transfer, tracking or XR authority. See [docs/SHASTA_INSTITUTE_GATEWAY.md](docs/SHASTA_INSTITUTE_GATEWAY.md) for exact schema and Quest acceptance gates.
+
+## HLJ-006 — Living Research Laboratory
+
+Three guided, zero-dependency educational models: 1D fixed-string standing waves, convex Platonic-solid Euler counts, and reproducible seeded fair-coin null-model trials. Visitors write a prediction, run a mathematical model, record an observation and a competing interpretation, then explicitly capture up to 12 records for local-only JSON export. Source references are contextual, not measurements or proof. See [docs/LIVING_RESEARCH_LAB.md](docs/LIVING_RESEARCH_LAB.md). No source-project code is copied or modified.
