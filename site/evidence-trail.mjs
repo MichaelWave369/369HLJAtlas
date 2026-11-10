@@ -86,7 +86,7 @@ export function makeTrailExport(trail,createdAt){
  return {
    schema:"369.hlj.evidence-trail-export.v1",createdAt,
    purpose:"Portable citation and review-question index, not verified experimental data.",
-   evidenceStatus:"UNVERIFIED_CATALOG_REFERENCES",privacy:"User-triggered local browser export; no upload or account.",
+   evidenceStatus:"UNVERIFIED_CATALOG_REFERENCES",privacy:"User-triggered local browser export; not uploaded or stored by HLJ Atlas; no account required.",
    trail
  };
 }
