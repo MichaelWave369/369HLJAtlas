@@ -146,8 +146,73 @@ const check=setInterval(async()=>{
     "Constellation selection did not follow linked topic");
   ensure(d.getElementById("workbench-count").textContent==="1 / 8",
     "Topic navigation discarded the session");
+
+  // HLJ-013: Create a local project from exactly one approved Constellation packet.
+  ensure(d.getElementById("research-projects")?.dataset.ready==="true","Project Workspace not initialized");
+  const projInputs=[
+    ["project-title","Patterns under boundary changes"],
+    ["project-question","How might fixed boundaries alter the standing-wave pattern?"],
+    ["project-hypothesis","Different boundaries should predict different nodal patterns."],
+    ["project-limitations","Only theoretical statements and personal notebook text exist; experimental data is missing."]
+  ];
+  for(const [id,value] of projInputs)d.getElementById(id).value=value;
+  const packetChoice=d.querySelector('#project-packet-choices input[name="project-packet"]');
+  ensure(!!packetChoice,"Approved packet was not offered for project inclusion");
+  packetChoice.click();
+  d.getElementById("project-create").click();
+  ensure(d.getElementById("project-count").textContent==="1 / 3",
+    "Research project was not created from selected approved packet");
+  ensure(d.querySelectorAll("#project-list .project-card").length===1,"Project library did not display created project");
+  ensure(d.getElementById("project-list").textContent.includes("Patterns under boundary changes"),
+    "Project question group was not retained");
+  // Clearing the packet library does not silently destroy a separately created project snapshot.
   d.getElementById("workbench-clear").click();
-  ensure(d.getElementById("workbench-count").textContent==="0 / 8","Constellation packet clear failed");
+  ensure(d.getElementById("workbench-count").textContent==="0 / 8","Workbench packet clear failed");
+  ensure(d.getElementById("project-count").textContent==="1 / 3",
+    "Clearing packets unexpectedly removed the independent project file");
+  d.getElementById("project-clear").click();
+  ensure(d.getElementById("project-count").textContent==="0 / 3","Project clear did not work");
+  // Now import an actual schema-valid project using the same current-catalog adapters.
+  const projectLib=await import("/research-project.mjs");
+  const workbenchLib=await import("/research-workbench.mjs");
+  const [verificationNow,auditNow,sourceCorrectionsNow,claimCorrectionsNow]=await Promise.all([
+    d.defaultView.fetch("./data/verification.json").then(r=>r.json()),
+    d.defaultView.fetch("./data/source-audit.json").then(r=>r.json()),
+    d.defaultView.fetch("./data/source-corrections.json").then(r=>r.json()),
+    d.defaultView.fetch("./data/corrections.json").then(r=>r.json())
+  ]);
+  const projectContext={
+    topics:topicsNow,research:researchNow,connections:linksNow,verification:verificationNow,
+    audit:auditNow,sourceCorrections:sourceCorrectionsNow,claimCorrections:claimCorrectionsNow
+  };
+  const normalizedPacket=workbenchLib.inspectWorkbenchInput(constellationPacket,projectContext);
+  const at="2026-11-09T23:00:00Z";
+  const projectFileData=projectLib.createResearchProject({
+    focus:{title:"Cymatics learning journal",
+      question:"Which visible resonant patterns correspond to controlled boundary changes?",
+      hypothesis:"Boundary conditions should change the computed node locations.",
+      limitations:"Only notebook comments and unreviewed dossier links are available, not measured experiments."},
+    entries:normalizedPacket,createdAt:at,updatedAt:at
+  },projectContext);
+  const projectFile=new d.defaultView.File([JSON.stringify(projectFileData)],"project-import.json",{type:"application/json"});
+  const projectTransfer=new d.defaultView.DataTransfer();
+  projectTransfer.items.add(projectFile);
+  const projectChooser=d.getElementById("project-file");
+  projectChooser.files=projectTransfer.files;
+  projectChooser.dispatchEvent(new d.defaultView.Event("change",{bubbles:true}));
+  await new Promise(resolve=>setTimeout(resolve,480));
+  ensure(!d.getElementById("project-import-preview").hidden,"Valid research project did not preview");
+  ensure(d.getElementById("project-import-accept").disabled,
+    "Project import approval bypassed explicit confirmation");
+  ensure(d.querySelectorAll("#project-preview-records .project-review-detail").length===3,
+    "Imported personal notes were not displayed for review");
+  d.getElementById("project-import-confirm").click();
+  ensure(!d.getElementById("project-import-accept").disabled,"Consent did not enable project approval");
+  d.getElementById("project-import-accept").click();
+  ensure(d.getElementById("project-count").textContent==="1 / 3","Approved imported project not added");
+  d.querySelector("#project-list .project-remove").click();
+  ensure(d.getElementById("project-count").textContent==="0 / 3","Project remove did not work");
+
 
   d.getElementById("institute-next").click();
   ensure(d.getElementById("institute-progress").textContent==="Stop 2 of 6","Visitor guide next-stop navigation failed");
