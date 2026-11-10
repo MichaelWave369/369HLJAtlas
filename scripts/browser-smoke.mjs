@@ -15,6 +15,10 @@ function ext(p){const index=p.lastIndexOf(".");return index<0?"":p.slice(index);
 const server=createServer(async(req,res)=>{
  try{
   const incoming=new URL(req.url,"http://localhost"),name=decodeURIComponent(incoming.pathname)==="/"?"/index.html":decodeURIComponent(incoming.pathname);
+  if(name==="/__interaction.html"){
+    const fixture=await readFile(new URL("../tests/browser-interactions.html",import.meta.url));
+    res.writeHead(200,{"content-type":"text/html; charset=utf-8","cache-control":"no-store"});res.end(fixture);return;
+  }
   const full=resolve(site,"."+name);
   if(full!==site&&!full.startsWith(site+sep)){res.writeHead(403);res.end();return;}
   const bytes=await readFile(full);
@@ -46,4 +50,19 @@ try{
  assert.match(output,/id="living-protocols"/,"Living Lab not present");
  assert.match(output,/id="bridge-file"/,"Laboratory Bridge missing");
  console.log("PASS: real Chrome rendered verification queue, constellation, Institute, Living Lab and Lab Bridge.");
+
+ const interactionDom=await new Promise((accept,reject)=>{
+  const child=spawn(chrome,["--headless=new","--no-sandbox","--disable-gpu","--disable-dev-shm-usage","--disable-extensions",
+   "--disable-background-networking","--no-first-run","--virtual-time-budget=18000","--window-size=1280,900","--dump-dom",
+   "http://127.0.0.1:"+port+"/__interaction.html"],{stdio:["ignore","pipe","pipe"]});
+  let stdout="",stderr="";
+  child.stdout.on("data",d=>stdout+=d.toString());
+  child.stderr.on("data",d=>stderr+=d.toString().slice(0,12000));
+  const guard=setTimeout(()=>{child.kill("SIGKILL");reject(new Error("Interaction Chrome timed out: "+stderr.slice(-1000)));},45000);
+  child.on("error",e=>{clearTimeout(guard);reject(e);});
+  child.on("close",code=>{clearTimeout(guard);if(code!==0)reject(new Error("Interaction Chrome exited "+code+": "+stderr.slice(-1800)));else accept(stdout);});
+ });
+ assert.match(interactionDom,/id="interaction-report"[^>]*data-result="passed"/,
+   "Real browser interaction check did not pass: "+interactionDom.slice(-1400));
+ console.log("PASS: real Chrome clicked reviewer capture/clear, source audit filters, Institute tour and Living Lab run/capture.");
 }finally{await new Promise(resolve=>server.close(resolve));}
