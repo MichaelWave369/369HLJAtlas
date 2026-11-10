@@ -45,3 +45,7 @@ A review-before-apply Research Workbench inside the existing Living Lab, accepti
 ## HLJ-012: Constellation notebooks in the unified Workbench
 
 Import Constellation JSON with strict topic, relationship and dossier/reference reconciliation; preserve full personal notes in the consent-gated preview; link packet topics into the live Constellation without resetting memory. Existing 256 KiB per-file and eight-packet limits remain. Test valid and malformed imports, bundled roundtrip and Chrome navigation. Manual touch and screen-reader qualification still pending.
+
+## HLJ-013: Research Project Workspaces
+
+Organize reviewed Workbench packets into up to three self-contained, question-centered local projects. Export and re-import each bounded JSON project with explicit consent and the five existing packet validation contracts. Add record inspection and real Chrome create/import/clear coverage. Human sources, touch/assistive technology and scientific study review remain outside automated certification.

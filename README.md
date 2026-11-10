@@ -91,3 +91,7 @@ One research desk now accepts the **four existing, bounded export formats** from
 ## HLJ-012: Constellation notebook integration
 
 The Local Research Workbench now accepts **five** Atlas export families, including original Constellation research packets (`369-hlj-research-packet/v1`). Topic identity, provisional connections, dossier and reference records must match the Atlas registry; personal notes remain user-authored, unauthenticated and unverified. A visible Constellation shortcut leads to the Workbench for deliberate JSON export/import. Clickable topic links navigate without reloading or discarding the session-only research collection. No new top-bar links, tracking or automatic upload. See `docs/CONSTELLATION_WORKBENCH_HLJ012.md`.
+
+## HLJ-013: Research Project Workspaces
+
+The existing Workbench now lets you build up to three **local, question-centered projects** from explicitly selected reviewed packets. Each project holds a title, research question, working hypothesis, limitations and independent copies of only the packets selected. Export it as `369.hlj.research-project.v1` JSON; a dedicated 1 MiB file reader re-imports projects after validating all included packets against the current five producer adapters and requiring explicit inspection/consent. User observations and source metadata remain unverified. Projects are session-only until exported and are independent of clearing the packet queue. No accounts, backend, automatic storage or new header links. See [docs/RESEARCH_PROJECTS_HLJ013.md](docs/RESEARCH_PROJECTS_HLJ013.md).
