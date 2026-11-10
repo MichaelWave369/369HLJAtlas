@@ -125,6 +125,55 @@
     <p class="workbench-warning">The exported file contains the notes and source-declared details you explicitly approved. Review it before sharing it with anyone.</p>
    </div>
   </div>
+
+  <section class="research-projects" id="research-projects" data-ready="false" aria-labelledby="research-projects-heading">
+   <div class="research-projects-heading">
+    <div><p class="eyebrow">HLJ-013 / RESEARCH PROJECT WORKSPACES</p>
+     <h3 id="research-projects-heading">Build a question-centered research project.</h3>
+     <p>Organize the packets you explicitly reviewed around a question, working hypothesis, and limitations. Each project is a local, portable file, not a public finding. Project copies remain independently exportable even if you later clear the packet collection.</p></div>
+    <div class="research-projects-counter"><strong id="project-count">0 / 3</strong><span>session projects</span></div>
+   </div>
+   <div class="research-projects-columns">
+    <div class="research-project-editor">
+     <h4>3. Create a project from approved packets</h4>
+     <form id="project-create-form">
+       <label>Project title <input id="project-title" maxlength="90" minlength="3" placeholder="Understanding resonance" required></label>
+       <label>Research question <textarea id="project-question" rows="2" maxlength="500" minlength="20" required placeholder="What changes when the boundary conditions change?"></textarea></label>
+       <label>Working hypothesis <textarea id="project-hypothesis" rows="2" maxlength="500" minlength="15" required placeholder="A proposed explanation to test, not a confirmed result"></textarea></label>
+       <label>Known limitations / next checks <textarea id="project-limitations" rows="3" maxlength="750" minlength="20" required placeholder="What evidence would disconfirm this? What is still missing?"></textarea></label>
+       <fieldset class="research-project-packets">
+        <legend>Choose approved packets to include</legend>
+        <div id="project-packet-choices"><p>Import and approve a packet above first.</p></div>
+       </fieldset>
+       <button id="project-create" type="submit">Create local research project</button>
+       <p id="project-create-status" role="status" aria-live="polite"></p>
+     </form>
+    </div>
+    <div class="research-project-import">
+     <h4>4. Open a saved project</h4>
+     <p>Projects contain the attached packet text, including personal notes. Choose a saved JSON file (maximum 1 MiB), inspect everything, then explicitly approve it for this tab.</p>
+     <label for="project-file">Select project JSON</label>
+     <input id="project-file" type="file" accept=".json,application/json">
+     <p id="project-import-status" role="status" aria-live="polite">No project file selected.</p>
+     <div id="project-import-preview" hidden>
+       <h5 id="project-preview-title">Project preview</h5>
+       <p id="project-preview-question"></p>
+       <p id="project-preview-hypothesis"></p>
+       <p id="project-preview-limitations"></p>
+       <div id="project-preview-records"></div>
+       <p class="project-safety-note">Importing is not publishing. All attached notes remain personal, and references are rechecked against the current Atlas.</p>
+       <label class="project-confirm"><input type="checkbox" id="project-import-confirm"> I inspected this project and its attached packets, including any personal notes, and want to add it to this local session.</label>
+       <button id="project-import-accept" type="button" disabled>Add reviewed project to session</button>
+     </div>
+    </div>
+   </div>
+   <div class="research-project-library">
+    <div class="research-project-library-heading"><h4>Your local research projects</h4><button id="project-clear" type="button" disabled>Clear all projects</button></div>
+    <div id="project-list" aria-live="polite"><p>No projects created or imported in this tab.</p></div>
+    <p id="project-library-status" role="status" aria-live="polite"></p>
+    <p class="project-safety-note">Nothing saves automatically. Export each project before closing the tab. Every exported project includes the selected research notes. Review the file carefully before sharing.</p>
+   </div>
+  </section>
  </div>
 </section>
 
