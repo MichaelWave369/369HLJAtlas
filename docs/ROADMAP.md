@@ -29,3 +29,7 @@ Tests green, 179 unique topic IDs, every topic accessible by search, browse and 
 
 ## HLJ-008 — Citation metadata fixes and interaction acceptance (proposed)
 Correct five source titles, preserve an append-only bibliography correction log, inspect indexed content on sixteen reference pages without claiming live URL status or retraction review, and add Chrome interaction smoke for review and experiment workflows. Human source-to-claim audits, screen reader and Quest acceptance, and retraction checks are still pending.
+
+## HLJ-009A: Header navigation cleanup
+
+Consolidate eleven crowded header links into accessible grouped desktop dropdowns and a responsive mobile Menu. Preserve all original anchors, add Node coverage and Chrome menu interaction checks, and keep manual touch/assistive-technology review on the acceptance list.
