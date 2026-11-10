@@ -79,3 +79,7 @@ First bounded index/publisher-content review: 16 of 19 source records had limite
 ## HLJ-009A: Compact header navigation
 
 Eleven top-bar destinations are grouped under Explore, Discover, Research, Labs and Our Promise. The responsive menu preserves every destination, uses keyboard-operable native dropdowns and a mobile Menu toggle, and retains GitHub Source. Automated Chrome tests exercise desktop and narrow-mobile navigation. See docs/NAVIGATION_HLJ009.md.
+
+## HLJ-010: The Evidence Trail
+
+The existing Verify Claims desk now shows a claim-by-claim documentary chain: source roles, bounded page inspections, missing retraction/claim checks, and explicit bibliography or claim-level correction history. Users can share `?claim=<id>#evidence-trail`, jump to a dossier/source audit, or export public citation metadata locally. It does **not** verify scientific conclusions, create new connections, or require another top-bar link. See `docs/EVIDENCE_TRAIL_HLJ010.md`.

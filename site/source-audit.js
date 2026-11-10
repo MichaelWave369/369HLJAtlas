@@ -52,6 +52,11 @@ async function init(){
  $("source-audit-pending").textContent=String(audit.records.filter(r=>r.reviewState==="not-checked").length);
  $("source-audit-fixes").textContent=String(changes.entries.length);
  $("source-audit-filter").addEventListener("change",filterSource);
- renderCorrections();showSource(audit.records[0].sourceId);$("source-audit-root").dataset.ready="true";
+ renderCorrections();
+ document.addEventListener("hlj:source-selected",event=>{const id=event.detail?.sourceId;
+  if(sourceMap.has(id)){ $("source-audit-filter").value="all";showSource(id); }});
+ const incoming=new URLSearchParams(location.search).get("source");
+ showSource(sourceMap.has(incoming)?incoming:audit.records[0].sourceId);
+ $("source-audit-root").dataset.ready="true";
 }
 init().catch(e=>{$("source-audit-visible").textContent="Unavailable";$("source-audit-observation").textContent="Bibliography audit could not initialize: "+String(e.message||e);});
