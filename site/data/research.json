@@ -29,10 +29,10 @@
     },
     {
       "id": "nist-quartz",
-      "title": "Time and Frequency from A to Z: Quartz Resonators",
+      "title": "Time and Frequency from A to Z, Q to Ra",
       "publisher": "NIST",
       "kind": "Technical reference",
-      "year": 2023,
+      "year": null,
       "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-q-ra"
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "id": "breathing-review",
-      "title": "Breathing Practices for Stress and Anxiety Reduction: Systematic Review",
+      "title": "Breathing Practices for Stress and Anxiety Reduction: Conceptual Framework of Implementation Guidelines Based on a Systematic Review of the Published Literature",
       "publisher": "PubMed indexed journal article",
       "kind": "Systematic review",
       "year": 2023,
@@ -93,7 +93,7 @@
     },
     {
       "id": "breathing-control",
-      "title": "Effect of coherent breathing on mental health and wellbeing: a randomized placebo-controlled trial",
+      "title": "Effect of coherent breathing on mental health and wellbeing: a randomised placebo-controlled trial",
       "publisher": "PubMed indexed journal article",
       "kind": "Randomized placebo-controlled trial",
       "year": 2023,
@@ -133,7 +133,7 @@
     },
     {
       "id": "psi-meta",
-      "title": "Anomalous perception in a Ganzfeld condition: a meta-analysis",
+      "title": "Stage 2 Registered Report: Anomalous perception in a Ganzfeld condition - A meta-analysis of more than 40 years investigation",
       "publisher": "F1000Research (open-access at PMC)",
       "kind": "Registered-report meta-analysis",
       "year": 2024,
@@ -141,7 +141,7 @@
     },
     {
       "id": "psi-replication",
-      "title": "The Transparent Psi Project: multi-laboratory replication",
+      "title": "Raising the value of research studies in psychological science by increasing the credibility of research reports: the transparent Psi project",
       "publisher": "Royal Society Open Science (open-access at PMC)",
       "kind": "Multi-laboratory preregistered replication",
       "year": 2023,

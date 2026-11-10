@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "scope": "Append-only bibliography metadata corrections, not scientific claim verdicts.",
+  "entries": [
+    {
+      "id": "source-fix-01",
+      "sourceId": "nist-quartz",
+      "date": "2026-11-09",
+      "field": "title",
+      "previousValue": "Time and Frequency from A to Z: Quartz Resonators",
+      "newValue": "Time and Frequency from A to Z, Q to Ra",
+      "evidenceUrl": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-q-ra",
+      "reason": "Original page includes a Quartz Oscillator section but its actual page title is broader.",
+      "status": "bibliography-metadata-correction-only"
+    },
+    {
+      "id": "source-fix-02",
+      "sourceId": "breathing-review",
+      "date": "2026-11-09",
+      "field": "title",
+      "previousValue": "Breathing Practices for Stress and Anxiety Reduction: Systematic Review",
+      "newValue": "Breathing Practices for Stress and Anxiety Reduction: Conceptual Framework of Implementation Guidelines Based on a Systematic Review of the Published Literature",
+      "evidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/38137060/",
+      "reason": "PubMed PMID 38137060 indexes the full article title.",
+      "status": "bibliography-metadata-correction-only"
+    },
+    {
+      "id": "source-fix-03",
+      "sourceId": "breathing-control",
+      "date": "2026-11-09",
+      "field": "title",
+      "previousValue": "Effect of coherent breathing on mental health and wellbeing: a randomized placebo-controlled trial",
+      "newValue": "Effect of coherent breathing on mental health and wellbeing: a randomised placebo-controlled trial",
+      "evidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/38092805/",
+      "reason": "PubMed PMID 38092805 uses 'randomised' in the original title.",
+      "status": "bibliography-metadata-correction-only"
+    },
+    {
+      "id": "source-fix-04",
+      "sourceId": "psi-meta",
+      "date": "2026-11-09",
+      "field": "title",
+      "previousValue": "Anomalous perception in a Ganzfeld condition: a meta-analysis",
+      "newValue": "Stage 2 Registered Report: Anomalous perception in a Ganzfeld condition - A meta-analysis of more than 40 years investigation",
+      "evidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/38813059/",
+      "reason": "Published F1000Research version 4 title is more specific than prior shorthand.",
+      "status": "bibliography-metadata-correction-only"
+    },
+    {
+      "id": "source-fix-05",
+      "sourceId": "psi-replication",
+      "date": "2026-11-09",
+      "field": "title",
+      "previousValue": "The Transparent Psi Project: multi-laboratory replication",
+      "newValue": "Raising the value of research studies in psychological science by increasing the credibility of research reports: the transparent Psi project",
+      "evidenceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9890107/",
+      "reason": "Full Royal Society Open Science title is about reproducibility and a distinct ESP experimental paradigm.",
+      "status": "bibliography-metadata-correction-only"
+    }
+  ]
+}

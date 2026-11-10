@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-11-09",
+  "scope": "Page titles and limited source contents inspected for a bounded set; not a live URL health, retraction, or scientific peer-review audit.",
+  "reviewStateDescriptions": {
+    "content-matched": "Title and limited page contents inspected, not all claims verified.",
+    "title-corrected": "Bibliography title corrected against publisher or index metadata.",
+    "not-checked": "No page-content review conducted this pass."
+  },
+  "records": [
+    {
+      "sourceId": "ucsc-chladni",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Chladni Figures",
+      "pageEvidenceUrl": "https://ucscphysicsdemo.sites.ucsc.edu/physics-5b6b-demos/oscillations-and-waves/chladni-figures/",
+      "observation": "University demonstration describes plate vibration, standing waves and nodal sand patterns.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "smithsonian-chladni",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Chladni Plates",
+      "pageEvidenceUrl": "https://americanhistory.si.edu/acoustics/chladni-plates",
+      "observation": "Museum documents Chladni plate experiment and history.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "nist-quartz",
+      "reviewState": "title-corrected",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Time and Frequency from A to Z, Q to Ra",
+      "pageEvidenceUrl": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-q-ra",
+      "observation": "Quartz Oscillator is a section within the broader Time and Frequency from A to Z, Q to Ra page.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "nist-time",
+      "reviewState": "not-checked",
+      "observedOn": null,
+      "method": "Not manually inspected in HLJ-008.",
+      "canonicalTitle": null,
+      "pageEvidenceUrl": null,
+      "observation": "Metadata, source content, correction/retraction status and claim mapping still require review.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "nasa-schumann",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Observation of Schumann Resonances in the Earth's Ionosphere",
+      "pageEvidenceUrl": "https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20120000051.pdf",
+      "observation": "NASA technical report describes the Earth-ionosphere cavity and lightning excitation.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "mathworld-solids",
+      "reviewState": "not-checked",
+      "observedOn": null,
+      "method": "Not manually inspected in HLJ-008.",
+      "canonicalTitle": null,
+      "pageEvidenceUrl": null,
+      "observation": "Metadata, source content, correction/retraction status and claim mapping still require review.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "met-patterns",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Geometric Patterns in Islamic Art",
+      "pageEvidenceUrl": "https://www.metmuseum.org/es/essays/geometric-patterns-in-islamic-art",
+      "observation": "Metropolitan Museum essay concerns Islamic geometric patterns.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "nhgri-noncoding",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Non-Coding DNA",
+      "pageEvidenceUrl": "https://www.genome.gov/genetics-glossary/Non-Coding-DNA",
+      "observation": "NHGRI glossary describes noncoding DNA and some gene regulatory functions.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "nhgri-expression",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Gene Expression",
+      "pageEvidenceUrl": "https://www.genome.gov/genetics-glossary/Gene-Expression",
+      "observation": "NHGRI glossary describes gene expression in biological terms.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "breathing-review",
+      "reviewState": "title-corrected",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Breathing Practices for Stress and Anxiety Reduction: Conceptual Framework of Implementation Guidelines Based on a Systematic Review of the Published Literature",
+      "pageEvidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/38137060/",
+      "observation": "PubMed PMID 38137060 provides the full systematic review framework title.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "breathing-control",
+      "reviewState": "title-corrected",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Effect of coherent breathing on mental health and wellbeing: a randomised placebo-controlled trial",
+      "pageEvidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/38092805/",
+      "observation": "PubMed PMID 38092805 uses 'randomised' and documents the intervention comparison.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "meditation-nccih",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Meditation and Mindfulness: Effectiveness and Safety",
+      "pageEvidenceUrl": "https://www.nccih.nih.gov/health/meditation-and-mindfulness-effectiveness-and-safety",
+      "observation": "NCCIH overview reports research limits and safety of meditation.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "water-cowan",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Ultrafast memory loss and energy redistribution in the hydrogen bond network of liquid H2O",
+      "pageEvidenceUrl": "https://www.nature.com/articles/nature03383",
+      "observation": "Nature article reports ultrafast hydrogen-bond network dynamics, not a universal water-memory trial.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "water-review",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Water Dynamics in the Hydration Shells of Biomolecules",
+      "pageEvidenceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5571470/",
+      "observation": "Chemistry review discusses hydration-shell dynamics and bulk water.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "homeopathy-nccih",
+      "reviewState": "not-checked",
+      "observedOn": null,
+      "method": "Not manually inspected in HLJ-008.",
+      "canonicalTitle": null,
+      "pageEvidenceUrl": null,
+      "observation": "Metadata, source content, correction/retraction status and claim mapping still require review.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "psi-meta",
+      "reviewState": "title-corrected",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Stage 2 Registered Report: Anomalous perception in a Ganzfeld condition - A meta-analysis of more than 40 years investigation",
+      "pageEvidenceUrl": "https://pubmed.ncbi.nlm.nih.gov/38813059/",
+      "observation": "PubMed records the complete F1000Research Stage 2 Registered Report title and version.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "psi-replication",
+      "reviewState": "title-corrected",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Raising the value of research studies in psychological science by increasing the credibility of research reports: the transparent Psi project",
+      "pageEvidenceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9890107/",
+      "observation": "Paper reports a different ESP protocol than Ganzfeld and focuses on transparent replication methods.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "stonehenge",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "Using scale modelling to assess the prehistoric acoustics of Stonehenge",
+      "pageEvidenceUrl": "https://www.sciencedirect.com/science/article/pii/S0305440320301394",
+      "observation": "Archaeological article reports a 1:12 Stonehenge scale acoustic model.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    },
+    {
+      "sourceId": "malta",
+      "reviewState": "content-matched",
+      "observedOn": "2026-11-09",
+      "method": "Publicly indexed publisher/primary-host content reviewed; not live uptime or retraction check.",
+      "canonicalTitle": "An archaeoacoustic study of the Ħal Saflieni Hypogeum on Malta",
+      "pageEvidenceUrl": "https://www.cambridge.org/core/journals/antiquity/article/abs/an-archaeoacoustic-study-of-the-al-saflieni-hypogeum-on-malta/2B530AEA46DEA5BF04D1C763725B3A34",
+      "observation": "Antiquity article by Rupert Till studies Hypogeum acoustics and limitations.",
+      "retractionCheck": "not-checked",
+      "claimEvidenceCheck": "not-independently-verified"
+    }
+  ]
+}
